@@ -11,6 +11,11 @@ def run():
 
     while True:
         response = get(API_URL, params={"limit": PAGE_SIZE, "offset": offset})
+        response.raise_for_status()
+
+        if not response.content:
+            raise ValueError(f"Empty response from Plug and Play API at offset {offset}")
+
         data = response.json()
 
         results = data.get("results", [])
