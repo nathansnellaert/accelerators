@@ -1,0 +1,720 @@
+{
+  "meta": {
+    "asset_name": "plug_and_play_companies",
+    "source_path": "/Users/nathansnellaert/Documents/data-integrations/integrations/accelerators/data/raw/plug_and_play_companies.json",
+    "source_size_bytes": 49434518,
+    "detected_format": "json",
+    "structure": "array",
+    "root_key_path": null,
+    "record_count": 2223,
+    "is_compressed": false,
+    "last_processed": "2025-12-07T12:04:03.543960",
+    "error": null
+  },
+  "schema": {
+    "rows": 2223,
+    "columns": {
+      "@name": {
+        "type": "string",
+        "unique": 1830,
+        "cardinality": 0.823,
+        "min_len": 5,
+        "max_len": 27,
+        "samples": [
+          "stateramedical-com",
+          "airwallex-com",
+          "camsens-de",
+          "usebump-com",
+          "fintechinsights-io"
+        ]
+      },
+      "@path": {
+        "type": "string",
+        "unique": 1830,
+        "cardinality": 0.823,
+        "min_len": 6,
+        "max_len": 28,
+        "samples": [
+          "/stateramedical-com",
+          "/airwallex-com",
+          "/camsens-de",
+          "/usebump-com",
+          "/fintechinsights-io"
+        ]
+      },
+      "@id": {
+        "type": "fixed_size_binary[16]",
+        "unique": 1830,
+        "cardinality": 0.823,
+        "samples": [
+          "b'\\x05\\xa5\\xc9>\\x81\\x94J\\x0f\\xa9\\xcb1\\x97\\xdd,\\xa9\\x8a'",
+          "b'\\xe9\\xfa\\xa9P\\xc7!E\\x90\\x9c\\n\\x96\\xfd\\x1dI\\xc8\\xe6'",
+          "b'\\xda)G\\xf0*\\xc6J\\xeb\\xb4\\xe2\\x04\\xf5go_\\xdb'",
+          "b'\\xfen\\xeb\\x1f\\\\\\x0bK \\x82\\xc8\\xbe(w&\\x19\\x10'",
+          "b'\\x07()\\xa2 0A\\xd4\\xbf|\\xe3\\x9d\\xef\\xd5\\x08t'"
+        ]
+      },
+      "@nodeType": {
+        "type": "string",
+        "unique": 1,
+        "cardinality": 0.0,
+        "min_len": 10,
+        "max_len": 10,
+        "samples": [
+          "mt:startup"
+        ],
+        "issues": [
+          {
+            "type": "single_value",
+            "message": "All 2223 rows have same value",
+            "value": "mt:startup"
+          }
+        ]
+      },
+      "jcr:createdBy": {
+        "type": "string",
+        "unique": 1,
+        "cardinality": 0.0,
+        "min_len": 5,
+        "max_len": 5,
+        "samples": [
+          "admin"
+        ],
+        "issues": [
+          {
+            "type": "single_value",
+            "message": "All 2223 rows have same value",
+            "value": "admin"
+          }
+        ]
+      },
+      "startupLongitude": {
+        "type": "string",
+        "nulls": 18,
+        "null_pct": 0.81,
+        "unique": 508,
+        "cardinality": 0.23,
+        "min_len": 0,
+        "max_len": 20,
+        "samples": [
+          "",
+          "-122.4194155",
+          "-74.0059728",
+          "-0.1275862",
+          "-122.0363496"
+        ],
+        "issues": [
+          {
+            "type": "numeric_as_string",
+            "message": "Column contains numbers stored as strings",
+            "example": "-73.56739189999999"
+          }
+        ]
+      },
+      "startupLatitude": {
+        "type": "string",
+        "nulls": 18,
+        "null_pct": 0.81,
+        "unique": 508,
+        "cardinality": 0.23,
+        "min_len": 0,
+        "max_len": 17,
+        "samples": [
+          "",
+          "37.7749295",
+          "40.7127753",
+          "51.5072178",
+          "37.36883"
+        ],
+        "issues": [
+          {
+            "type": "numeric_as_string",
+            "message": "Column contains numbers stored as strings",
+            "example": "45.5018869"
+          }
+        ]
+      },
+      "startupCountry": {
+        "type": "string",
+        "unique": 119,
+        "cardinality": 0.054,
+        "min_len": 892,
+        "max_len": 1068,
+        "samples": [
+          "{\"@name\": \"united-states\", \"@path\": \"/united-states\", \"@id\": \"81353fe8-58cb-43f4-bd7f-0344eb78022a\", \"@nodeType\": \"mt:country\", \"slug\": \"united-states\", \"jcr:createdBy\": \"admin\", \"jcr:created\": \"2024-06-11T06:47:30.368Z\", \"countryContinent\": \"North America\", \"mgnl:lastActivated\": \"2024-09-12T08:37:01.493Z\", \"mgnl:created\": \"2024-06-06T08:42:58.668Z\", \"countryName\": \"United States\", \"mgnl:createdBy\": \"pnptc\", \"mgnl:lastModified\": \"2024-11-26T09:56:42.453Z\", \"mgnl:activationStatus\": true, \"countryRegion\": \"Americas\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@link\": \"https://public.dxp.playbook.vc/united-states.html\", \"@nodes\": [], \"jcr:mixinTypes\": [\"mgnl:hasVersion\"], \"mgnl:lastActivatedBy\": \"pnptc\", \"countrySortingOrder\": \"1\", \"mgnl:lastActivatedVersion\": \"1.1\", \"countryID\": \"1\", \"mgnl:lastActivatedVersionCreated\": \"2024-09-12T08:37:01.159Z\", \"name\": null, \"jcr:predecessors\": null, \"jcr:baseVersion\": null, \"mgnl:comment\": null, \"jcr:isCheckedOut\": null, \"jcr:versionHistory\": null}",
+          "{\"@name\": \"united-states\", \"@path\": \"/united-states\", \"@id\": \"81353fe8-58cb-43f4-bd7f-0344eb78022a\", \"@nodeType\": \"mt:country\", \"slug\": \"united-states\", \"jcr:createdBy\": \"admin\", \"jcr:created\": \"2024-06-11T06:47:30.360Z\", \"countryContinent\": \"North America\", \"mgnl:lastActivated\": \"2024-09-12T08:37:01.493Z\", \"mgnl:created\": \"2024-06-06T08:42:58.668Z\", \"countryName\": \"United States\", \"mgnl:createdBy\": \"pnptc\", \"mgnl:lastModified\": \"2024-11-26T09:56:42.453Z\", \"mgnl:activationStatus\": true, \"countryRegion\": \"Americas\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@link\": \"https://public.dxp.playbook.vc/united-states.html\", \"@nodes\": [], \"jcr:mixinTypes\": [\"mgnl:hasVersion\"], \"mgnl:lastActivatedBy\": \"pnptc\", \"countrySortingOrder\": \"1\", \"mgnl:lastActivatedVersion\": \"1.1\", \"countryID\": \"1\", \"mgnl:lastActivatedVersionCreated\": \"2024-09-12T08:37:01.159Z\", \"name\": null, \"jcr:predecessors\": null, \"jcr:baseVersion\": null, \"mgnl:comment\": null, \"jcr:isCheckedOut\": null, \"jcr:versionHistory\": null}",
+          "{\"@name\": \"canada\", \"@path\": \"/canada\", \"@id\": \"45f58a18-69aa-479f-a3ef-398b0dbf0b27\", \"@nodeType\": \"mt:country\", \"slug\": \"canada\", \"jcr:createdBy\": \"admin\", \"jcr:created\": \"2024-06-11T06:40:04.902Z\", \"countryContinent\": \"North America\", \"mgnl:lastActivated\": \"2024-06-21T09:36:56.480Z\", \"mgnl:created\": \"2024-06-06T08:39:25.812Z\", \"countryName\": \"Canada\", \"mgnl:createdBy\": \"pnptc\", \"mgnl:lastModified\": \"2024-11-26T09:56:42.299Z\", \"mgnl:activationStatus\": true, \"countryRegion\": \"Americas\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@link\": \"https://public.dxp.playbook.vc/canada.html\", \"@nodes\": [], \"jcr:mixinTypes\": null, \"mgnl:lastActivatedBy\": null, \"countrySortingOrder\": null, \"mgnl:lastActivatedVersion\": null, \"countryID\": null, \"mgnl:lastActivatedVersionCreated\": null, \"name\": null, \"jcr:predecessors\": null, \"jcr:baseVersion\": null, \"mgnl:comment\": null, \"jcr:isCheckedOut\": null, \"jcr:versionHistory\": null}",
+          "{\"@name\": \"canada\", \"@path\": \"/canada\", \"@id\": \"45f58a18-69aa-479f-a3ef-398b0dbf0b27\", \"@nodeType\": \"mt:country\", \"slug\": \"canada\", \"jcr:createdBy\": \"admin\", \"jcr:created\": \"2024-06-11T06:40:04.877Z\", \"countryContinent\": \"North America\", \"mgnl:lastActivated\": \"2024-06-21T09:36:56.480Z\", \"mgnl:created\": \"2024-06-06T08:39:25.812Z\", \"countryName\": \"Canada\", \"mgnl:createdBy\": \"pnptc\", \"mgnl:lastModified\": \"2024-11-26T09:56:42.299Z\", \"mgnl:activationStatus\": true, \"countryRegion\": \"Americas\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@link\": \"https://public.dxp.playbook.vc/canada.html\", \"@nodes\": [], \"jcr:mixinTypes\": null, \"mgnl:lastActivatedBy\": null, \"countrySortingOrder\": null, \"mgnl:lastActivatedVersion\": null, \"countryID\": null, \"mgnl:lastActivatedVersionCreated\": null, \"name\": null, \"jcr:predecessors\": null, \"jcr:baseVersion\": null, \"mgnl:comment\": null, \"jcr:isCheckedOut\": null, \"jcr:versionHistory\": null}",
+          "{\"@name\": \"united-kingdom\", \"@path\": \"/united-kingdom\", \"@id\": \"8d63cb40-215a-47eb-85d3-42bfa0e06fa0\", \"@nodeType\": \"mt:country\", \"slug\": \"united-kingdom\", \"jcr:createdBy\": \"admin\", \"jcr:created\": \"2024-06-11T06:41:46.854Z\", \"countryContinent\": \"Europe\", \"mgnl:lastActivated\": \"2024-06-21T09:38:44.517Z\", \"mgnl:created\": \"2024-06-06T08:40:14.358Z\", \"countryName\": \"United Kingdom\", \"mgnl:createdBy\": \"pnptc\", \"mgnl:lastModified\": \"2024-11-26T09:56:42.339Z\", \"mgnl:activationStatus\": true, \"countryRegion\": \"EMEA\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@link\": \"https://public.dxp.playbook.vc/united-kingdom.html\", \"@nodes\": [], \"jcr:mixinTypes\": null, \"mgnl:lastActivatedBy\": null, \"countrySortingOrder\": null, \"mgnl:lastActivatedVersion\": null, \"countryID\": null, \"mgnl:lastActivatedVersionCreated\": null, \"name\": null, \"jcr:predecessors\": null, \"jcr:baseVersion\": null, \"mgnl:comment\": null, \"jcr:isCheckedOut\": null, \"jcr:versionHistory\": null}"
+        ]
+      },
+      "mgnl:created": {
+        "type": "string",
+        "unique": 1830,
+        "cardinality": 0.823,
+        "min_len": 24,
+        "max_len": 24,
+        "samples": [
+          "2024-07-12T16:30:30.337Z",
+          "2024-07-12T16:30:37.194Z",
+          "2024-07-12T16:44:17.870Z",
+          "2024-07-12T16:44:24.836Z",
+          "2024-07-12T16:44:35.628Z"
+        ]
+      },
+      "startupUnicorn": {
+        "type": "bool",
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          false,
+          true
+        ]
+      },
+      "startupPlaybookID": {
+        "type": "string",
+        "unique": 1830,
+        "cardinality": 0.823,
+        "min_len": 3,
+        "max_len": 6,
+        "samples": [
+          "87151",
+          "426",
+          "80577",
+          "64503",
+          "82775"
+        ],
+        "issues": [
+          {
+            "type": "multi_granularity_dates",
+            "message": "Mixed date granularities: ['yearly', 'monthly_compact']",
+            "granularities": [
+              {
+                "granularity": "yearly",
+                "format": "YYYY",
+                "example": "9465"
+              },
+              {
+                "granularity": "monthly_compact",
+                "format": "YYYYMM",
+                "example": "102833"
+              }
+            ]
+          },
+          {
+            "type": "numeric_as_string",
+            "message": "Column contains numbers stored as strings",
+            "example": "87151"
+          }
+        ]
+      },
+      "jcr:baseVersion": {
+        "type": "fixed_size_binary[16]",
+        "nulls": 1799,
+        "null_pct": 80.9,
+        "unique": 424,
+        "cardinality": 1.0,
+        "samples": [
+          "b':\\x96\\x172W\\xf1G\\xf9\\xb3\\xe4\\xba\\xcc\\x97\\xebvt'",
+          "b'a\\xe4\\x97A\\xae\\x9bH\\xf2\\x9b\\x16\\xb1\\xabM0O\\xe6'",
+          "b'\\xaa\\x17\\xc0\\xc2!\\\\E\\x81\\x9d\\xc0=\\xce\\xe1\\xdd\\xa6K'",
+          "b'\\xbc\\x01\\x96\\x19\\xb6\\x9fC\\xb6\\xad\\xd3\\x83\\xedz\\xe5\\x99\\xff'",
+          "b'\\xe6a#\\xc0\\xc0\\xacK\\xe5\\x8f\\xa3\\x1f\\xf9O\\xe1\\xa5\\xe5'"
+        ]
+      },
+      "startupIndustriesList-search": {
+        "type": "string",
+        "unique": 684,
+        "cardinality": 0.308,
+        "min_len": 0,
+        "max_len": 813,
+        "samples": [
+          "cbf05043-f396-4e30-a63a-4cd20ab9367d",
+          "10541516-8397-48d2-bf61-ea27e690cc5a",
+          "2c02baed-764f-4091-af4b-686ee01f9308",
+          "b9557710-8a05-432a-8d62-90181ef62199",
+          "c283fc2f-68cf-4339-8d8a-a2ad1502c5f4"
+        ]
+      },
+      "startupExit": {
+        "type": "bool",
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          false,
+          true
+        ]
+      },
+      "startupAccelerated": {
+        "type": "bool",
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          true,
+          false
+        ]
+      },
+      "startupDescription": {
+        "type": "string",
+        "unique": 1822,
+        "cardinality": 0.82,
+        "min_len": 11,
+        "max_len": 2437,
+        "samples": [
+          "Created by SigParser",
+          "\"Statera Medical is a pioneering health and medtech company specializing in orthopedic and medical devices, with a focus on shoulder joint replacement implants.\n\nAt the forefront of innovation, Statera Medical develops smart and adjustable implants that are tailored to each patient, aiming to enhance quality of life and reduce complications. Their cutting-edge implants combine surgical and technological advancements to improve patient outcomes significantly.\n\nThe adjustable prosthesis, equipped with the Goldilocks system, allows precise management of implant thickness to customize surgery for individual patients. By providing objective measurements of soft tissue tension, surgeons can mitigate risks such as fracture, instability, dislocation, and muscle fatigue.\n\nAdditionally, Statera Medical offers connected prosthetics that transmit soft tissue tension data to a connection terminal, enabling real-time monitoring during surgery and postoperative care. With an intuitive interface for enhanced surgical processes, Statera Medical is revolutionizing the field of orthopedic implants.\"",
+          "\"Airwallex is a prominent fintech company offering integrated solutions for businesses to streamline cross-border transactions. \n\nEstablished in 2015, Airwallex has expanded its global presence with over 400 employees across ten international offices. The company has secured substantial venture capital funding exceeding $200 million, with support from renowned investors such as DST Global, Sequoia Capital, Tencent, and Mastercard. \n\nRecognized as a fintech unicorn in the APAC region, Airwallex's cutting-edge platform facilitates high-speed, cost-effective international payments and seamless receipt of funds worldwide. \n\nNamed among the top 50 fintech companies globally, Airwallex is dedicated to revolutionizing financial services and fostering international business growth in an interconnected digital economy.\"",
+          "\"CAMSENS GmbH is a pioneering company in the fields of Animal Health and Artificial Intelligence, revolutionizing pathogen detection for veterinarians and laboratories.\n\nUtilizing efficient and rapid processing systems, CAMSENS doubles the speed of pathogen detection with its digital, fully automated Multiscan scanner. This innovative technology, enhanced by artificial intelligence for customizable image processing, supports high workloads and throughput.\n\nIn Animal Health, CAMSENS specializes in detecting parasite eggs in fecal samples of sheep and cattle, with potential applications for other animals and lab tests. Additionally, businesses can rely on CAMSENS for air quality monitoring, detecting mold spores and airborne contaminants with precision.\n\nCAMSENS aims to streamline pathology testing with affordable solutions, reduce employee workload, and enable high-throughput analysis through fully automated processes, ensuring accurate and timely results for clients.\"",
+          "\"Bump by Ownors AI is a cutting-edge company at the forefront of Brand & Retail, Deeptech, Fintech, and Supply Chain industries. \n\nUtilizing artificial intelligence and analytics, Bump offers a revolutionary platform tailored for creators. By tracking and recovering lost revenue, facilitating micro-financing, and arranging personalized live sessions with industry experts, Bump empowers creators to overcome traditional barriers and access essential resources.\n\nWith a focus on mentorship and managed micro-advances, Bump by Ownors AI is reshaping the landscape for creators, providing them with the tools and support needed to thrive in the competitive entertainment industry. Through innovative technology and strategic partnerships, Bump is driving innovation and fostering growth within the creator community.\""
+        ],
+        "issues": [
+          {
+            "type": "whitespace",
+            "message": "1 values have leading/trailing whitespace",
+            "example": "'EXest is aTokyo-based inbound travel promotion startup .The company provides the WOW U platform that connects inbound visitors to Japan with licensed interpreters and tour guides in addition to WOWU-media offering potential visitors to Japan with video clips introducing must-visit spots and popular local souvenirs on Facebook. '"
+          }
+        ]
+      },
+      "jcr:versionHistory": {
+        "type": "fixed_size_binary[16]",
+        "nulls": 1799,
+        "null_pct": 80.9,
+        "unique": 424,
+        "cardinality": 1.0,
+        "samples": [
+          "b'=\\xbf\\xca\\xc7\\xab?GA\\xb3\\xab]-2H5\\x00'",
+          "b'\\xd8>\\xb0\\xb3\\xd6\\xf7J\\xaa\\xb0\\xa2\\xcf\\xb8\\x0e\\xfbD/'",
+          "b'\\xdfW\\xfb\\xa8\\xb7)L\\xb0\\x9aX\\xc5S\\xb0\\x05\\xf1\\xbf'",
+          "b'\\x81\\xa3\\x1dj\\x15\\xe7@\\xbb\\xb8\\x19\\xbc\\x9e\\x15/\\xe1s'",
+          "b'\\xdcX\\xaa\\xa3\\x95\\x88O\\xdc\\xbbG\\x1c\")\\xc8\\xed\\xf0'"
+        ]
+      },
+      "startupMainIndustry": {
+        "type": "string",
+        "nulls": 14,
+        "null_pct": 0.63,
+        "unique": 52,
+        "cardinality": 0.024,
+        "min_len": 38,
+        "max_len": 1056,
+        "samples": [
+          "{\"@name\":\"fintech\",\"@path\":\"/fintech\",\"@id\":\"cbf05043-f396-4e30-a63a-4cd20ab9367d\",\"@nodeType\":\"mt:industries\",\"industryLastInsightMain\":\"81ee25b5-a3c8-4915-96d9-4a7ed343b62e\",\"slug\":\"fintech\",\"jcr:createdBy\":\"admin\",\"industryIsActive\":true,\"name\":\"fintech\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:05:31.377Z\",\"mgnl:created\":\"2024-05-08T14:46:56.693Z\",\"industryDetailPage\":\"c8ea7ee2-cac4-44fb-a979-ae1cf5d452e9\",\"industryTitle\":\"Fintech\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:predecessors\":[\"d17d9c22-bb71-4446-bcd6-fe4ed1918716\"],\"jcr:baseVersion\":\"d17d9c22-bb71-4446-bcd6-fe4ed1918716\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-07-29T05:49:00.798Z\",\"jcr:isCheckedOut\":true,\"industryImage\":\"jcr:943f1f29-7d37-46a3-8432-4bcb0508ec34\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"jcr:versionHistory\":\"e4edf5ac-6401-45ae-abbc-6888ea8a45cd\",\"@link\":\"https://public.dxp.playbook.vc/fintech.html\",\"@nodes\":[]}",
+          "{\"@name\":\"health\",\"@path\":\"/health\",\"@id\":\"10541516-8397-48d2-bf61-ea27e690cc5a\",\"@nodeType\":\"mt:industries\",\"industryLastInsightMain\":\"80be5302-d49e-49cc-ba0c-16c21f2e7cc5\",\"slug\":\"health\",\"jcr:createdBy\":\"admin\",\"industryIsActive\":true,\"name\":\"health\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:05:38.101Z\",\"mgnl:created\":\"2024-05-15T02:01:49.097Z\",\"industryDetailPage\":\"33a1ea4c-eed7-4982-bc2f-e039e82f78e6\",\"mgnl:createdBy\":\"ajerrom\",\"industryTitle\":\"Health\",\"jcr:predecessors\":[\"b1dff2c7-0b54-46e4-8344-486bbfd245e5\"],\"jcr:baseVersion\":\"b1dff2c7-0b54-46e4-8344-486bbfd245e5\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-12-03T19:41:37.599Z\",\"jcr:isCheckedOut\":true,\"industryImage\":\"jcr:389d4c83-a9e4-4970-a4d9-99d2de658bd3\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"jcr:versionHistory\":\"0f21fd46-e7e8-4cdc-9fb3-f605e11f0b4d\",\"@link\":\"https://public.dxp.playbook.vc/health.html\",\"@nodes\":[]}",
+          "{\"@name\":\"fintech\",\"@path\":\"/fintech\",\"@id\":\"cbf05043-f396-4e30-a63a-4cd20ab9367d\",\"@nodeType\":\"mt:industries\",\"industryLastInsightMain\":\"81ee25b5-a3c8-4915-96d9-4a7ed343b62e\",\"slug\":\"fintech\",\"jcr:createdBy\":\"admin\",\"industryIsActive\":true,\"name\":\"fintech\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:05:31.369Z\",\"mgnl:created\":\"2024-05-08T14:46:56.693Z\",\"industryDetailPage\":\"c8ea7ee2-cac4-44fb-a979-ae1cf5d452e9\",\"industryTitle\":\"Fintech\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:predecessors\":[\"9834f283-ef69-49a9-9a24-4dd6ba1d93b5\"],\"jcr:baseVersion\":\"9834f283-ef69-49a9-9a24-4dd6ba1d93b5\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-07-29T05:49:00.798Z\",\"jcr:isCheckedOut\":true,\"industryImage\":\"jcr:943f1f29-7d37-46a3-8432-4bcb0508ec34\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"jcr:versionHistory\":\"178d5314-ee70-4d41-81da-a88c7384f433\",\"@link\":\"https://public.dxp.playbook.vc/fintech.html\",\"@nodes\":[]}",
+          "{\"@name\":\"health\",\"@path\":\"/health\",\"@id\":\"10541516-8397-48d2-bf61-ea27e690cc5a\",\"@nodeType\":\"mt:industries\",\"industryLastInsightMain\":\"80be5302-d49e-49cc-ba0c-16c21f2e7cc5\",\"slug\":\"health\",\"jcr:createdBy\":\"admin\",\"industryIsActive\":true,\"name\":\"health\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:05:38.093Z\",\"mgnl:created\":\"2024-05-15T02:01:49.097Z\",\"industryDetailPage\":\"33a1ea4c-eed7-4982-bc2f-e039e82f78e6\",\"mgnl:createdBy\":\"ajerrom\",\"industryTitle\":\"Health\",\"jcr:predecessors\":[\"fe48742e-89aa-4fbe-a844-831b349996b3\"],\"jcr:baseVersion\":\"fe48742e-89aa-4fbe-a844-831b349996b3\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-12-03T19:41:37.599Z\",\"jcr:isCheckedOut\":true,\"industryImage\":\"jcr:389d4c83-a9e4-4970-a4d9-99d2de658bd3\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"jcr:versionHistory\":\"d8bf1503-3f0a-4105-ab7d-5b1981e0e9e7\",\"@link\":\"https://public.dxp.playbook.vc/health.html\",\"@nodes\":[]}",
+          "{\"@name\":\"energy\",\"@path\":\"/energy\",\"@id\":\"7da339c4-5172-4bdf-9785-de19567785c7\",\"@nodeType\":\"mt:industries\",\"industryLastInsightMain\":\"1906e71c-d341-4f43-b361-5a7c41f8b006\",\"slug\":\"energy\",\"jcr:createdBy\":\"admin\",\"industryIsActive\":true,\"name\":\"energy\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:05:24.925Z\",\"mgnl:created\":\"2024-05-14T04:59:43.775Z\",\"mgnl:createdBy\":\"ajerrom\",\"industryTitle\":\"Energy\",\"industryDetailPage\":\"71b950df-6c92-4e07-89f2-f80d7dd5bbb2\",\"jcr:predecessors\":[\"93d19cac-d05c-4543-8ed6-c26d4e32a7e6\"],\"jcr:baseVersion\":\"93d19cac-d05c-4543-8ed6-c26d4e32a7e6\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-07-29T05:48:41.152Z\",\"jcr:isCheckedOut\":true,\"industryImage\":\"jcr:f0947947-696b-48fc-83b8-d71de970238b\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"jcr:versionHistory\":\"82dff7e1-df8f-48a6-b42c-94636a5a2435\",\"@link\":\"https://public.dxp.playbook.vc/energy.html\",\"@nodes\":[]}"
+        ]
+      },
+      "slug": {
+        "type": "string",
+        "nulls": 2,
+        "null_pct": 0.09,
+        "unique": 1829,
+        "cardinality": 0.824,
+        "min_len": 5,
+        "max_len": 27,
+        "samples": [
+          "stateramedical-com",
+          "airwallex-com",
+          "camsens-de",
+          "usebump-com",
+          "fintechinsights-io"
+        ]
+      },
+      "startupLocation": {
+        "type": "string",
+        "nulls": 20,
+        "null_pct": 0.9,
+        "unique": 90,
+        "cardinality": 0.041,
+        "min_len": 2,
+        "max_len": 13656,
+        "samples": [
+          "{\"@name\":\"silicon-valley\",\"@path\":\"/silicon-valley\",\"@id\":\"5f212fb1-242b-4c48-8675-1dba5292cb04\",\"@nodeType\":\"mt:locations\",\"jcr:createdBy\":\"admin\",\"locationState\":\"California\",\"locationTitle\":\"Silicon Valley, California\",\"name\":\"silicon-valley\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.822Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"locationLinkedin\":\"https://www.linkedin.com/company/plug-and-play-tech-center/\",\"jcr:baseVersion\":\"293e23ff-7c80-494f-b1d4-5cdb15cb27f2\",\"locationIsActive\":true,\"locationCity\":\"Silicon Valley\",\"mgnl:activationStatus\":true,\"locationAddress\":\"440 N Wolfe Road\",\"jcr:versionHistory\":\"790c9ec0-1721-4a92-880f-32fe9a0bc08a\",\"slug\":\"silicon-valley\",\"locationMapLongitude\":\"-122.01288133068657\",\"locationMapLatitude\":\"37.38444554719271\",\"locationDetailPage\":\"f07482b1-a644-499f-9134-167d94296dfb\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:10:29.249Z\",\"locationAdress\":\"440 N. Wolfe Road, Sunnyvale, CA 94085\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:predecessors\":[\"293e23ff-7c80-494f-b1d4-5cdb15cb27f2\"],\"locationPhone\":\"(408) 524-1400\",\"locationSortingOrder\":\"1\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"locationMapCoordinates\":\"Location Map Coordinates\",\"jcr:isCheckedOut\":true,\"locationCountry\":\"81353fe8-58cb-43f4-bd7f-0344eb78022a\",\"locationImage\":\"jcr:bf9ec2d8-72f8-4a6f-b49e-991886c52b47\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@link\":\"https://public.dxp.playbook.vc/silicon-valley.html\",\"locationIndustriesList\":{\"@name\":\"locationIndustriesList\",\"@path\":\"/silicon-valley/locationIndustriesList\",\"@id\":\"304037da-0641-40ef-bded-215f805d621a\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.351Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.822Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"0\":{\"@name\":\"0\",\"@path\":\"/silicon-valley/locationIndustriesList/0\",\"@id\":\"7155617b-5649-4e29-a82e-96c7134bceb6\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.391Z\",\"mgnl:activationStatus\":true,\"mgnl:removeIfEmpty\":false,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.824Z\",\"locationIndustry\":\"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\",\"jcr:created\":\"2024-11-26T22:30:17.352Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.669Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/silicon-valley/locationIndustriesList/1\",\"@id\":\"6926c589-b0d7-4d9b-890f-58fbaa26d181\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.396Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.828Z\",\"jcr:created\":\"2024-11-26T22:30:17.352Z\",\"locationIndustry\":\"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.669Z\",\"@nodes\":[]},\"2\":{\"@name\":\"2\",\"@path\":\"/silicon-valley/locationIndustriesList/2\",\"@id\":\"d9e10dc5-c5ec-45e0-b1f5-8e7cd9091db1\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.401Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.353Z\",\"locationIndustry\":\"27dceb7e-c987-49ed-811b-9c514e443b56\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.829Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.670Z\",\"@nodes\":[]},\"3\":{\"@name\":\"3\",\"@path\":\"/silicon-valley/locationIndustriesList/3\",\"@id\":\"d325e374-3b11-4827-a252-21d25901c358\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.401Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.830Z\",\"jcr:created\":\"2024-11-26T22:30:17.353Z\",\"locationIndustry\":\"7da339c4-5172-4bdf-9785-de19567785c7\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.671Z\",\"@nodes\":[]},\"4\":{\"@name\":\"4\",\"@path\":\"/silicon-valley/locationIndustriesList/4\",\"@id\":\"3ed53a63-9270-42b7-bb27-a296963b2209\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.402Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.354Z\",\"locationIndustry\":\"2c02baed-764f-4091-af4b-686ee01f9308\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.834Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.672Z\",\"@nodes\":[]},\"5\":{\"@name\":\"5\",\"@path\":\"/silicon-valley/locationIndustriesList/5\",\"@id\":\"755bc9ca-2a99-478f-bca2-93243f3fe566\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.407Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.354Z\",\"locationIndustry\":\"cbf05043-f396-4e30-a63a-4cd20ab9367d\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.835Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"6\":{\"@name\":\"6\",\"@path\":\"/silicon-valley/locationIndustriesList/6\",\"@id\":\"9bba6985-05d4-4419-aaf4-3ab01c1111f9\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.408Z\",\"mgnl:activationStatus\":true,\"locationIndustry\":\"195b37bb-cd76-4683-84f8-fee804d956bf\",\"jcr:created\":\"2024-11-26T22:30:17.355Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.836Z\",\"mgnl:created\":\"2024-06-28T18:16:04.673Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"7\":{\"@name\":\"7\",\"@path\":\"/silicon-valley/locationIndustriesList/7\",\"@id\":\"6f6db071-7441-4639-95db-870413cb35c0\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.409Z\",\"mgnl:activationStatus\":true,\"locationIndustry\":\"10541516-8397-48d2-bf61-ea27e690cc5a\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.840Z\",\"jcr:created\":\"2024-11-26T22:30:17.355Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.674Z\",\"@nodes\":[]},\"8\":{\"@name\":\"8\",\"@path\":\"/silicon-valley/locationIndustriesList/8\",\"@id\":\"f56ad279-dcdb-4452-8a75-3a17b149aa1a\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.409Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.841Z\",\"locationIndustry\":\"b9557710-8a05-432a-8d62-90181ef62199\",\"jcr:created\":\"2024-11-26T22:30:17.355Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.675Z\",\"@nodes\":[]},\"9\":{\"@name\":\"9\",\"@path\":\"/silicon-valley/locationIndustriesList/9\",\"@id\":\"22ad6c9e-7a1c-40be-b049-5d2abb1b748b\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.410Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.356Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.844Z\",\"locationIndustry\":\"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.675Z\",\"@nodes\":[]},\"10\":{\"@name\":\"10\",\"@path\":\"/silicon-valley/locationIndustriesList/10\",\"@id\":\"7611adb7-ad34-413b-908f-30081750cd58\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.411Z\",\"mgnl:activationStatus\":true,\"locationIndustry\":\"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\",\"jcr:created\":\"2024-11-26T22:30:17.356Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.845Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.676Z\",\"@nodes\":[]},\"11\":{\"@name\":\"11\",\"@path\":\"/silicon-valley/locationIndustriesList/11\",\"@id\":\"4f509871-5704-411a-a15d-9020db03fac7\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.411Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.357Z\",\"locationIndustry\":\"7f70e209-aa57-4252-940f-be3aeef5bb21\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.846Z\",\"mgnl:created\":\"2024-06-28T18:16:04.676Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"12\":{\"@name\":\"12\",\"@path\":\"/silicon-valley/locationIndustriesList/12\",\"@id\":\"5ee3b82b-55d3-4429-9fc9-0979f284c561\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.412Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.847Z\",\"locationIndustry\":\"b925a072-a8ef-4573-bd87-f95dcc7180d8\",\"jcr:created\":\"2024-11-26T22:30:17.357Z\",\"mgnl:created\":\"2024-06-28T18:16:04.677Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"13\":{\"@name\":\"13\",\"@path\":\"/silicon-valley/locationIndustriesList/13\",\"@id\":\"d80aa36c-201a-4802-8abf-8f68fbf9c99f\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.412Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.358Z\",\"locationIndustry\":\"9361b669-f4f2-47d7-8e04-278dc1415cec\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.848Z\",\"mgnl:created\":\"2024-06-28T18:16:04.677Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"14\":{\"@name\":\"14\",\"@path\":\"/silicon-valley/locationIndustriesList/14\",\"@id\":\"4ffb1b4f-d279-4e8e-b6d6-0cb571c5bd84\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.413Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.851Z\",\"locationIndustry\":\"7b3d4d10-2426-4a8c-a942-26f1ee358b67\",\"jcr:created\":\"2024-11-26T22:30:17.358Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.678Z\",\"@nodes\":[]},\"15\":{\"@name\":\"15\",\"@path\":\"/silicon-valley/locationIndustriesList/15\",\"@id\":\"3a866d06-4924-4ada-ad0a-9a1276a1751f\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.853Z\",\"locationIndustry\":\"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\",\"jcr:created\":\"2024-11-26T22:30:17.359Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.678Z\",\"@nodes\":[]},\"16\":{\"@name\":\"16\",\"@path\":\"/silicon-valley/locationIndustriesList/16\",\"@id\":\"43ee4412-77d7-4b04-9d09-ecb2798f8e74\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.359Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.854Z\",\"locationIndustry\":\"8c148491-a0f0-4423-bea7-81260278480b\",\"mgnl:created\":\"2024-06-28T18:16:04.679Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\"]},\"locationPartnersList\":{\"@name\":\"locationPartnersList\",\"@path\":\"/silicon-valley/locationPartnersList\",\"@id\":\"2e273b57-00f0-455a-b3c0-43e391e3cb4c\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.369Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.360Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.857Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"0\":{\"@name\":\"0\",\"@path\":\"/silicon-valley/locationPartnersList/0\",\"@id\":\"c6d42a97-7ca8-467b-a5f8-379bc319dc75\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"eb3aba0a-d049-4647-9e75-1ab2c351562a\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.368Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.858Z\",\"jcr:created\":\"2024-11-26T22:30:17.360Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/silicon-valley/locationPartnersList/1\",\"@id\":\"adac1568-682e-4060-88a4-5084b0541030\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"e26da46d-628d-4e6f-ad2e-777e8c9aa767\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.368Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.859Z\",\"jcr:created\":\"2024-11-26T22:30:17.360Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"@nodes\":[]},\"2\":{\"@name\":\"2\",\"@path\":\"/silicon-valley/locationPartnersList/2\",\"@id\":\"ae4066b7-70a8-4ddc-a5f9-84354ab12154\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"72b11fbe-5e22-491e-9d41-6eb4006c7212\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.369Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.361Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.860Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"@nodes\":[]},\"3\":{\"@name\":\"3\",\"@path\":\"/silicon-valley/locationPartnersList/3\",\"@id\":\"a9a9b3a9-25e4-4046-9949-78d6df9a2e4c\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"3985e889-1934-44fb-88e5-43a38d88e93e\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.369Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.361Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.863Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"4\":{\"@name\":\"4\",\"@path\":\"/silicon-valley/locationPartnersList/4\",\"@id\":\"9b160b82-8bf5-47b1-b002-1d4ceaac6d09\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"f1b5df71-8489-4144-bdf3-349af2c2324a\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.359Z\",\"jcr:created\":\"2024-11-26T22:30:17.364Z\",\"mgnl:created\":\"2024-11-26T22:30:13.359Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\",\"2\",\"3\",\"4\"]},\"@nodes\":[\"locationIndustriesList\",\"locationPartnersList\"]}",
+          "{\"@name\":\"silicon-valley\",\"@path\":\"/silicon-valley\",\"@id\":\"5f212fb1-242b-4c48-8675-1dba5292cb04\",\"@nodeType\":\"mt:locations\",\"jcr:createdBy\":\"admin\",\"locationState\":\"California\",\"locationTitle\":\"Silicon Valley, California\",\"name\":\"silicon-valley\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.822Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"locationLinkedin\":\"https://www.linkedin.com/company/plug-and-play-tech-center/\",\"jcr:baseVersion\":\"c5961c6d-81d3-4364-8a70-64f08a5c2a11\",\"locationIsActive\":true,\"locationCity\":\"Silicon Valley\",\"mgnl:activationStatus\":true,\"locationAddress\":\"440 N Wolfe Road\",\"jcr:versionHistory\":\"ab560d1f-f75c-426c-a936-5ee8d6b54271\",\"slug\":\"silicon-valley\",\"locationMapLongitude\":\"-122.01288133068657\",\"locationMapLatitude\":\"37.38444554719271\",\"locationDetailPage\":\"f07482b1-a644-499f-9134-167d94296dfb\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:10:29.215Z\",\"locationAdress\":\"440 N. Wolfe Road, Sunnyvale, CA 94085\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:predecessors\":[\"c5961c6d-81d3-4364-8a70-64f08a5c2a11\"],\"locationPhone\":\"(408) 524-1400\",\"locationSortingOrder\":\"1\",\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"locationMapCoordinates\":\"Location Map Coordinates\",\"jcr:isCheckedOut\":true,\"locationCountry\":\"81353fe8-58cb-43f4-bd7f-0344eb78022a\",\"locationImage\":\"jcr:bf9ec2d8-72f8-4a6f-b49e-991886c52b47\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@link\":\"https://public.dxp.playbook.vc/silicon-valley.html\",\"locationIndustriesList\":{\"@name\":\"locationIndustriesList\",\"@path\":\"/silicon-valley/locationIndustriesList\",\"@id\":\"304037da-0641-40ef-bded-215f805d621a\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.482Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.822Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"0\":{\"@name\":\"0\",\"@path\":\"/silicon-valley/locationIndustriesList/0\",\"@id\":\"7155617b-5649-4e29-a82e-96c7134bceb6\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.391Z\",\"mgnl:activationStatus\":true,\"mgnl:removeIfEmpty\":false,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.824Z\",\"locationIndustry\":\"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\",\"jcr:created\":\"2024-11-26T22:30:17.483Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.669Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/silicon-valley/locationIndustriesList/1\",\"@id\":\"6926c589-b0d7-4d9b-890f-58fbaa26d181\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.396Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.828Z\",\"jcr:created\":\"2024-11-26T22:30:17.484Z\",\"locationIndustry\":\"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.669Z\",\"@nodes\":[]},\"2\":{\"@name\":\"2\",\"@path\":\"/silicon-valley/locationIndustriesList/2\",\"@id\":\"d9e10dc5-c5ec-45e0-b1f5-8e7cd9091db1\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.401Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.484Z\",\"locationIndustry\":\"27dceb7e-c987-49ed-811b-9c514e443b56\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.829Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.670Z\",\"@nodes\":[]},\"3\":{\"@name\":\"3\",\"@path\":\"/silicon-valley/locationIndustriesList/3\",\"@id\":\"d325e374-3b11-4827-a252-21d25901c358\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.401Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.830Z\",\"jcr:created\":\"2024-11-26T22:30:17.485Z\",\"locationIndustry\":\"7da339c4-5172-4bdf-9785-de19567785c7\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.671Z\",\"@nodes\":[]},\"4\":{\"@name\":\"4\",\"@path\":\"/silicon-valley/locationIndustriesList/4\",\"@id\":\"3ed53a63-9270-42b7-bb27-a296963b2209\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.402Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.486Z\",\"locationIndustry\":\"2c02baed-764f-4091-af4b-686ee01f9308\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.834Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.672Z\",\"@nodes\":[]},\"5\":{\"@name\":\"5\",\"@path\":\"/silicon-valley/locationIndustriesList/5\",\"@id\":\"755bc9ca-2a99-478f-bca2-93243f3fe566\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.407Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.486Z\",\"locationIndustry\":\"cbf05043-f396-4e30-a63a-4cd20ab9367d\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.835Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"6\":{\"@name\":\"6\",\"@path\":\"/silicon-valley/locationIndustriesList/6\",\"@id\":\"9bba6985-05d4-4419-aaf4-3ab01c1111f9\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.408Z\",\"mgnl:activationStatus\":true,\"locationIndustry\":\"195b37bb-cd76-4683-84f8-fee804d956bf\",\"jcr:created\":\"2024-11-26T22:30:17.487Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.836Z\",\"mgnl:created\":\"2024-06-28T18:16:04.673Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"7\":{\"@name\":\"7\",\"@path\":\"/silicon-valley/locationIndustriesList/7\",\"@id\":\"6f6db071-7441-4639-95db-870413cb35c0\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.409Z\",\"mgnl:activationStatus\":true,\"locationIndustry\":\"10541516-8397-48d2-bf61-ea27e690cc5a\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.840Z\",\"jcr:created\":\"2024-11-26T22:30:17.492Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.674Z\",\"@nodes\":[]},\"8\":{\"@name\":\"8\",\"@path\":\"/silicon-valley/locationIndustriesList/8\",\"@id\":\"f56ad279-dcdb-4452-8a75-3a17b149aa1a\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.409Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.841Z\",\"locationIndustry\":\"b9557710-8a05-432a-8d62-90181ef62199\",\"jcr:created\":\"2024-11-26T22:30:17.492Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.675Z\",\"@nodes\":[]},\"9\":{\"@name\":\"9\",\"@path\":\"/silicon-valley/locationIndustriesList/9\",\"@id\":\"22ad6c9e-7a1c-40be-b049-5d2abb1b748b\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.410Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.497Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.844Z\",\"locationIndustry\":\"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.675Z\",\"@nodes\":[]},\"10\":{\"@name\":\"10\",\"@path\":\"/silicon-valley/locationIndustriesList/10\",\"@id\":\"7611adb7-ad34-413b-908f-30081750cd58\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.411Z\",\"mgnl:activationStatus\":true,\"locationIndustry\":\"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\",\"jcr:created\":\"2024-11-26T22:30:17.498Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.845Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.676Z\",\"@nodes\":[]},\"11\":{\"@name\":\"11\",\"@path\":\"/silicon-valley/locationIndustriesList/11\",\"@id\":\"4f509871-5704-411a-a15d-9020db03fac7\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.411Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.498Z\",\"locationIndustry\":\"7f70e209-aa57-4252-940f-be3aeef5bb21\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.846Z\",\"mgnl:created\":\"2024-06-28T18:16:04.676Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"12\":{\"@name\":\"12\",\"@path\":\"/silicon-valley/locationIndustriesList/12\",\"@id\":\"5ee3b82b-55d3-4429-9fc9-0979f284c561\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.412Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.847Z\",\"locationIndustry\":\"b925a072-a8ef-4573-bd87-f95dcc7180d8\",\"jcr:created\":\"2024-11-26T22:30:17.501Z\",\"mgnl:created\":\"2024-06-28T18:16:04.677Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"13\":{\"@name\":\"13\",\"@path\":\"/silicon-valley/locationIndustriesList/13\",\"@id\":\"d80aa36c-201a-4802-8abf-8f68fbf9c99f\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.412Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.501Z\",\"locationIndustry\":\"9361b669-f4f2-47d7-8e04-278dc1415cec\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.848Z\",\"mgnl:created\":\"2024-06-28T18:16:04.677Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"14\":{\"@name\":\"14\",\"@path\":\"/silicon-valley/locationIndustriesList/14\",\"@id\":\"4ffb1b4f-d279-4e8e-b6d6-0cb571c5bd84\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.413Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.851Z\",\"locationIndustry\":\"7b3d4d10-2426-4a8c-a942-26f1ee358b67\",\"jcr:created\":\"2024-11-26T22:30:17.502Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.678Z\",\"@nodes\":[]},\"15\":{\"@name\":\"15\",\"@path\":\"/silicon-valley/locationIndustriesList/15\",\"@id\":\"3a866d06-4924-4ada-ad0a-9a1276a1751f\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.853Z\",\"locationIndustry\":\"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\",\"jcr:created\":\"2024-11-26T22:30:17.502Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-28T18:16:04.678Z\",\"@nodes\":[]},\"16\":{\"@name\":\"16\",\"@path\":\"/silicon-valley/locationIndustriesList/16\",\"@id\":\"43ee4412-77d7-4b04-9d09-ecb2798f8e74\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.414Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.503Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.854Z\",\"locationIndustry\":\"8c148491-a0f0-4423-bea7-81260278480b\",\"mgnl:created\":\"2024-06-28T18:16:04.679Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\"]},\"locationPartnersList\":{\"@name\":\"locationPartnersList\",\"@path\":\"/silicon-valley/locationPartnersList\",\"@id\":\"2e273b57-00f0-455a-b3c0-43e391e3cb4c\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.369Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.504Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.857Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"0\":{\"@name\":\"0\",\"@path\":\"/silicon-valley/locationPartnersList/0\",\"@id\":\"c6d42a97-7ca8-467b-a5f8-379bc319dc75\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"eb3aba0a-d049-4647-9e75-1ab2c351562a\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.368Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.858Z\",\"jcr:created\":\"2024-11-26T22:30:17.505Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/silicon-valley/locationPartnersList/1\",\"@id\":\"adac1568-682e-4060-88a4-5084b0541030\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"e26da46d-628d-4e6f-ad2e-777e8c9aa767\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.368Z\",\"mgnl:activationStatus\":true,\"mgnl:lastActivated\":\"2024-11-26T10:15:12.859Z\",\"jcr:created\":\"2024-11-26T22:30:17.506Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"@nodes\":[]},\"2\":{\"@name\":\"2\",\"@path\":\"/silicon-valley/locationPartnersList/2\",\"@id\":\"ae4066b7-70a8-4ddc-a5f9-84354ab12154\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"72b11fbe-5e22-491e-9d41-6eb4006c7212\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.369Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.506Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.860Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"@nodes\":[]},\"3\":{\"@name\":\"3\",\"@path\":\"/silicon-valley/locationPartnersList/3\",\"@id\":\"a9a9b3a9-25e4-4046-9949-78d6df9a2e4c\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"3985e889-1934-44fb-88e5-43a38d88e93e\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.369Z\",\"mgnl:activationStatus\":true,\"jcr:created\":\"2024-11-26T22:30:17.507Z\",\"mgnl:lastActivated\":\"2024-11-26T10:15:12.863Z\",\"mgnl:created\":\"2024-05-27T06:53:33.551Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"4\":{\"@name\":\"4\",\"@path\":\"/silicon-valley/locationPartnersList/4\",\"@id\":\"9b160b82-8bf5-47b1-b002-1d4ceaac6d09\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"f1b5df71-8489-4144-bdf3-349af2c2324a\",\"mgnl:lastModified\":\"2024-11-26T22:30:13.359Z\",\"jcr:created\":\"2024-11-26T22:30:17.513Z\",\"mgnl:created\":\"2024-11-26T22:30:13.359Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\",\"2\",\"3\",\"4\"]},\"@nodes\":[\"locationIndustriesList\",\"locationPartnersList\"]}",
+          "\"\"",
+          "{\"@name\":\"tokyo\",\"@path\":\"/tokyo\",\"@id\":\"3323e74c-ecb6-4202-9c7f-71dfba5a0092\",\"@nodeType\":\"mt:locations\",\"jcr:createdBy\":\"admin\",\"locationState\":\"Japan\",\"locationTitle\":\"Tokyo, Japan\",\"name\":\"tokyo\",\"mgnl:created\":\"2024-06-04T09:01:59.480Z\",\"locationLinkedin\":\"https://www.linkedin.com/company/plugandplayjapan/\",\"jcr:baseVersion\":\"fd9bdbb1-9028-41b5-ad6c-20c1528b726c\",\"locationIsActive\":true,\"locationCity\":\"Tokyo\",\"locationAddress\":\"3 Chome-12 Shibuya\",\"jcr:versionHistory\":\"f8b8012c-ea05-4ce9-85b6-0bb491cfbd0b\",\"slug\":\"tokyo\",\"locationMapLongitude\":\"139.69629355397382\",\"locationMapLatitude\":\"35.658063516858704\",\"locationDetailPage\":\"6614b460-dbe0-40ef-a547-893e7359f045\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-11T06:54:23.901Z\",\"locationAdress\":\"150-0043 Tokyo, Shibuya City, Dogenzaka, 1\u221216\u22123 Shibuya Center Place 3F\",\"mgnl:createdBy\":\"amarin\",\"jcr:predecessors\":[\"fd9bdbb1-9028-41b5-ad6c-20c1528b726c\"],\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.430Z\",\"jcr:isCheckedOut\":true,\"locationCountry\":\"b98d0089-3f4f-4b58-b01b-782a9f73fa9d\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"locationImage\":\"jcr:fe611d48-83e0-419c-862b-5983797835d5\",\"@link\":\"https://public.dxp.playbook.vc/tokyo.html\",\"locationPartnersList\":{\"@name\":\"locationPartnersList\",\"@path\":\"/tokyo/locationPartnersList\",\"@id\":\"e57c1ac7-e182-41b4-b394-0138f0d555e8\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.411Z\",\"jcr:created\":\"2025-04-11T17:53:23.882Z\",\"mgnl:created\":\"2024-06-04T10:43:29.335Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"0\":{\"@name\":\"0\",\"@path\":\"/tokyo/locationPartnersList/0\",\"@id\":\"31d4117f-5b54-4c8f-b6d6-91215fda4b43\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"locationPartner\":\"eb5974a1-41d1-4c5b-9688-807c0ee54d56\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.411Z\",\"jcr:created\":\"2025-04-11T17:53:23.882Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-04T10:43:29.335Z\",\"@nodes\":[]},\"@nodes\":[\"0\"]},\"locationIndustriesList\":{\"@name\":\"locationIndustriesList\",\"@path\":\"/tokyo/locationIndustriesList\",\"@id\":\"b18f69d4-2f31-4f47-aac2-4dbed6c68e45\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.430Z\",\"jcr:created\":\"2025-04-11T17:53:23.883Z\",\"mgnl:created\":\"2024-06-12T15:10:19.040Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"0\":{\"@name\":\"0\",\"@path\":\"/tokyo/locationIndustriesList/0\",\"@id\":\"ec499b22-9ba2-4eca-a322-6b9f602fcc93\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.425Z\",\"locationIndustry\":\"cbf05043-f396-4e30-a63a-4cd20ab9367d\",\"jcr:created\":\"2025-04-11T17:53:23.883Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-12T15:10:19.044Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/tokyo/locationIndustriesList/1\",\"@id\":\"780eb3fc-ce26-4585-8df9-98a5970f274e\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.426Z\",\"jcr:created\":\"2025-04-11T17:53:23.884Z\",\"locationIndustry\":\"b9557710-8a05-432a-8d62-90181ef62199\",\"mgnl:created\":\"2024-06-12T15:10:19.045Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"2\":{\"@name\":\"2\",\"@path\":\"/tokyo/locationIndustriesList/2\",\"@id\":\"b8c516ca-3879-4431-8cfd-acec48a803e8\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.427Z\",\"locationIndustry\":\"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\",\"jcr:created\":\"2025-04-11T17:53:23.884Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-12T15:10:19.046Z\",\"@nodes\":[]},\"3\":{\"@name\":\"3\",\"@path\":\"/tokyo/locationIndustriesList/3\",\"@id\":\"3400993a-7cf5-4259-a1bb-bc967f5ca42c\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.428Z\",\"locationIndustry\":\"9361b669-f4f2-47d7-8e04-278dc1415cec\",\"jcr:created\":\"2025-04-11T17:53:23.885Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-12T15:10:19.046Z\",\"@nodes\":[]},\"4\":{\"@name\":\"4\",\"@path\":\"/tokyo/locationIndustriesList/4\",\"@id\":\"adf549a5-3642-4baa-b238-9f3b677e631a\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.428Z\",\"locationIndustry\":\"7da339c4-5172-4bdf-9785-de19567785c7\",\"jcr:created\":\"2025-04-11T17:53:23.885Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-12T15:10:19.047Z\",\"@nodes\":[]},\"5\":{\"@name\":\"5\",\"@path\":\"/tokyo/locationIndustriesList/5\",\"@id\":\"82ec2193-7e14-448d-8e2b-ab36d46af707\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.429Z\",\"locationIndustry\":\"195b37bb-cd76-4683-84f8-fee804d956bf\",\"jcr:created\":\"2025-04-11T17:53:23.885Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-12T15:10:19.049Z\",\"@nodes\":[]},\"6\":{\"@name\":\"6\",\"@path\":\"/tokyo/locationIndustriesList/6\",\"@id\":\"925e07cd-e275-4d87-9166-affd0597cf3b\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.429Z\",\"locationIndustry\":\"b925a072-a8ef-4573-bd87-f95dcc7180d8\",\"jcr:created\":\"2025-04-11T17:53:23.886Z\",\"mgnl:created\":\"2024-06-12T15:10:19.050Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"7\":{\"@name\":\"7\",\"@path\":\"/tokyo/locationIndustriesList/7\",\"@id\":\"567b456b-d001-4066-b59c-60dcf53f0586\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-04-11T17:53:21.430Z\",\"locationIndustry\":\"27dceb7e-c987-49ed-811b-9c514e443b56\",\"jcr:created\":\"2025-04-11T17:53:23.886Z\",\"mgnl:created\":\"2024-06-12T15:10:19.051Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\"]},\"@nodes\":[\"locationPartnersList\",\"locationIndustriesList\"]}",
+          "{\"@name\":\"alberta\",\"@path\":\"/alberta\",\"@id\":\"28a76bb6-756a-4fca-ad53-4353aa558906\",\"@nodeType\":\"mt:locations\",\"jcr:createdBy\":\"admin\",\"locationState\":\"Canada\",\"locationTitle\":\"Alberta, Canada\",\"name\":\"alberta\",\"mgnl:created\":\"2024-05-27T06:53:34.139Z\",\"locationLinkedin\":\"https://www.linkedin.com/showcase/plugandplaycanada/\",\"jcr:baseVersion\":\"1c79c2e7-0c46-4234-9576-5531d5aaecdd\",\"locationIsActive\":true,\"locationCity\":\"Alberta\",\"jcr:versionHistory\":\"8c60bb64-2e17-42bd-99d0-429159db42a6\",\"slug\":\"alberta\",\"locationMapLongitude\":\"-114.05366022883551\",\"locationMapLatitude\":\"51.04235320585662\",\"locationDetailPage\":\"f605019e-cf96-4c86-bb00-eef5bcbf499c\",\"jcr:mixinTypes\":[\"mix:versionable\",\"mgnl:hasVersion\"],\"jcr:created\":\"2024-06-02T00:11:11.224Z\",\"mgnl:createdBy\":\"dmunoz\",\"locationAdress\":\"438 11 Ave SE, Calgary, AB T2G 0Y4, Canada\",\"jcr:predecessors\":[\"1c79c2e7-0c46-4234-9576-5531d5aaecdd\"],\"mgnl:comment\":\"\",\"mgnl:lastModified\":\"2025-08-21T20:56:18.645Z\",\"locationMapCoordinates\":\"Location Map Coordinates\",\"jcr:isCheckedOut\":true,\"locationCountry\":\"45f58a18-69aa-479f-a3ef-398b0dbf0b27\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"locationImage\":\"jcr:a408ba90-568c-4015-9144-4d6ff9b91e6c\",\"@link\":\"https://public.dxp.playbook.vc/alberta.html\",\"locationIndustriesList\":{\"@name\":\"locationIndustriesList\",\"@path\":\"/alberta/locationIndustriesList\",\"@id\":\"b304cf4c-5427-4ef6-a7cc-ac42f8b0675c\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-19T00:40:56.469Z\",\"jcr:created\":\"2025-08-21T20:56:21.314Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:34.139Z\",\"0\":{\"@name\":\"0\",\"@path\":\"/alberta/locationIndustriesList/0\",\"@id\":\"8db16208-e263-4cda-b69a-a3e5c28183e3\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-19T00:40:56.467Z\",\"locationIndustry\":\"2c02baed-764f-4091-af4b-686ee01f9308\",\"jcr:created\":\"2025-08-21T20:56:21.315Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-05-27T06:53:34.139Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/alberta/locationIndustriesList/1\",\"@id\":\"c27c4c7a-59da-4285-8c44-592b8211c794\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-19T00:40:56.467Z\",\"jcr:created\":\"2025-08-21T20:56:21.315Z\",\"locationIndustry\":\"195b37bb-cd76-4683-84f8-fee804d956bf\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-13T22:48:16.183Z\",\"@nodes\":[]},\"2\":{\"@name\":\"2\",\"@path\":\"/alberta/locationIndustriesList/2\",\"@id\":\"9f47f964-49bd-4d38-992e-2906bf1c17b8\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-19T00:40:56.468Z\",\"locationIndustry\":\"10541516-8397-48d2-bf61-ea27e690cc5a\",\"jcr:created\":\"2025-08-21T20:56:21.316Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-13T22:48:16.184Z\",\"@nodes\":[]},\"3\":{\"@name\":\"3\",\"@path\":\"/alberta/locationIndustriesList/3\",\"@id\":\"dba53ce9-2f1c-4b81-9383-c1fca8040aa0\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-19T00:40:56.469Z\",\"jcr:created\":\"2025-08-21T20:56:21.317Z\",\"locationIndustry\":\"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2024-06-13T22:48:16.184Z\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\",\"2\",\"3\"]},\"locationPartnersList\":{\"@name\":\"locationPartnersList\",\"@path\":\"/alberta/locationPartnersList\",\"@id\":\"3cb9f461-f567-4240-ac96-91e1fa72569d\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"dmunoz\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2024-11-19T00:40:56.459Z\",\"jcr:created\":\"2025-08-21T20:56:21.317Z\",\"mgnl:created\":\"2024-05-27T06:53:34.139Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"locationProgramsList\":{\"@name\":\"locationProgramsList\",\"@path\":\"/alberta/locationProgramsList\",\"@id\":\"ffa8bf72-d788-414a-9df8-313ec2f33277\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-08-21T20:56:18.642Z\",\"jcr:created\":\"2025-08-21T20:56:21.319Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2025-08-21T20:56:18.642Z\",\"0\":{\"@name\":\"0\",\"@path\":\"/alberta/locationProgramsList/0\",\"@id\":\"484da847-59c2-49db-b351-64eaf6646619\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"locationProgram\":\"a8a69063-405e-4315-a882-328ffa15e76a\",\"mgnl:lastModified\":\"2025-08-21T20:56:18.642Z\",\"jcr:created\":\"2025-08-21T20:56:21.320Z\",\"mgnl:created\":\"2025-08-21T20:56:18.642Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"@nodes\":[]},\"@nodes\":[\"0\"]},\"locationInsightsList\":{\"@name\":\"locationInsightsList\",\"@path\":\"/alberta/locationInsightsList\",\"@id\":\"8a8c8d21-bb6d-4994-805b-950888681c44\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"mgnl:lastModified\":\"2025-08-21T20:56:18.645Z\",\"jcr:created\":\"2025-08-21T20:56:21.321Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2025-08-21T20:56:18.645Z\",\"0\":{\"@name\":\"0\",\"@path\":\"/alberta/locationInsightsList/0\",\"@id\":\"7cc37347-ceee-4f76-997b-83b1039c87e9\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"locationInsight\":\"0d2a0fc1-31f5-41ae-ab38-436008804e96\",\"mgnl:lastModified\":\"2025-08-21T20:56:18.651Z\",\"jcr:created\":\"2025-08-21T20:56:21.323Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2025-08-21T20:56:18.651Z\",\"@nodes\":[]},\"1\":{\"@name\":\"1\",\"@path\":\"/alberta/locationInsightsList/1\",\"@id\":\"3d56e388-7c63-4425-9d40-7da8ff4078b8\",\"@nodeType\":\"mgnl:contentNode\",\"mgnl:createdBy\":\"ajerrom\",\"jcr:createdBy\":\"admin\",\"locationInsight\":\"bfb16b80-74f7-45b7-b543-5b597f2690d5\",\"mgnl:lastModified\":\"2025-08-21T20:56:18.651Z\",\"jcr:created\":\"2025-08-21T20:56:21.324Z\",\"mgnl:lastModifiedBy\":\"ajerrom\",\"mgnl:created\":\"2025-08-21T20:56:18.651Z\",\"@nodes\":[]},\"@nodes\":[\"0\",\"1\"]},\"@nodes\":[\"locationIndustriesList\",\"locationPartnersList\",\"locationProgramsList\",\"locationInsightsList\"]}"
+        ]
+      },
+      "startupOneLiner": {
+        "type": "string",
+        "unique": 1829,
+        "cardinality": 0.823,
+        "min_len": 1,
+        "max_len": 300,
+        "samples": [
+          "Orthopedic and Medical Device, Shoulder joint replacement implants",
+          "Airwallex is a financial technology company that offers integrated solutions to businesses for cross-border transactions.",
+          "CAMSENS GmbH helps veterinarians and laboratories double the speed of pathogen detection using automation and AI.",
+          "The #1 Fintech & AI-Driven Platform For Mentorship & Managed Micro-Advances For Creators",
+          "FinTech Insights is the first and only AI-Powered competitive analysis tool for banks, credit unions and fintechs."
+        ],
+        "issues": [
+          {
+            "type": "null_like_strings",
+            "message": "4 values look like nulls",
+            "examples": [
+              "-",
+              "."
+            ]
+          },
+          {
+            "type": "whitespace",
+            "message": "2 values have leading/trailing whitespace",
+            "example": "'Lipaworld is a borderless fintech platform designed for Africans. \ud83c\udf0d Available in+22 countries \ud83c\uddff\ud83c\udde6 \ud83c\uddec\ud83c\udded \ud83c\uddf0\ud83c\uddea \ud83c\uddff\ud83c\uddfc \ud83c\uddf3\ud83c\uddec '"
+          }
+        ]
+      },
+      "startupTitle": {
+        "type": "string",
+        "unique": 1817,
+        "cardinality": 0.817,
+        "min_len": 2,
+        "max_len": 44,
+        "samples": [
+          "Vela",
+          "Radiant AI",
+          "Breinify",
+          "Garage",
+          "Felix Homes"
+        ]
+      },
+      "startupWebsite": {
+        "type": "string",
+        "unique": 1830,
+        "cardinality": 0.823,
+        "min_len": 6,
+        "max_len": 157,
+        "samples": [
+          "https://www.stateramedical.com/",
+          "http://www.airwallex.com/",
+          "https://camsens.de/",
+          "https://www.usebump.com",
+          "https://www.fintechinsights.io/"
+        ]
+      },
+      "jcr:mixinTypes": {
+        "type": "list<element: string>",
+        "nulls": 1453,
+        "null_pct": 65.4,
+        "unique": 2,
+        "cardinality": 0.003,
+        "samples": [
+          "['mix:versionable', 'mgnl:hasVersion']",
+          "['mgnl:hasVersion']"
+        ]
+      },
+      "jcr:created": {
+        "type": "string",
+        "unique": 2217,
+        "cardinality": 0.997,
+        "min_len": 24,
+        "max_len": 24,
+        "samples": [
+          "2024-07-15T12:07:21.160Z",
+          "2024-07-15T16:58:12.804Z",
+          "2024-07-15T17:02:54.347Z",
+          "2024-07-16T19:31:52.325Z",
+          "2024-07-16T19:19:46.198Z"
+        ]
+      },
+      "startupLogo": {
+        "type": "string",
+        "unique": 1604,
+        "cardinality": 0.722,
+        "min_len": 49,
+        "max_len": 618,
+        "samples": [
+          "https://cdn.playbook.vc/media/startup-no-logo-placeholder.png",
+          "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/ckgfvf6mxvyziclfotl0",
+          "https://cdn.playbook.vc/media/thumbnails/Airwallex-logo_NwxrdKJ.png?Expires=1724760827&Signature=QP5lPUxvNJR0lVfvUTEOpKv7cmntlIfYimv3l8f6GhlZV9ysTiaECFRMg6eCFrrLkFZNGdRglmycYh86Dx3SXUUXNoRULFhGMRj-jaIJsLLaY14fqDC3y1Ojps8qFFvAjZ25ctXFBsjG6inUmFoXfG~pqAQQThMdE6LB0sUBG6GeTjOzoQc96Yl4aotn2utu2uwdu-xKC~xHGuZbX41ReDILvea0NAHNh~jLUxypaAktr4hUuLYih3v1n4ZXKOEqf-AfhWllAarEXSEQin9Ixgmm9CvAlgPuQQCyl6SYzFk2uzVL9dKjonbjwe0taeys52~57HFdYAzbSji4cqe-Pw__&Key-Pair-Id=K1EZH924FG48TE",
+          "https://cdn.playbook.vc/media/thumbnails/CS_LOGO_2023.png?Expires=1724760502&Signature=jCqQ4n9~V6dDzu0MEZ9MsbYEhTUEjbSj8X8~6F~w4Ve8BEYf8bFL8j-roIS6e0WX8YEXbWtAA8K8AHhdraQfAgI~xFnOJDb8tOhQ0HVFmKeHxKsOW0iMXh1ruE9orxbU~VnS9qzu9B7AuZ3cfi7hk-T4ZU0tQnyJwtEJ6Curc1XTDW5ElmVlm1qBwV8tkxpesILX2PTd4De~2GbaMKowM7vOJgz7FMzhHMghYwXzTYpmlRiqWh6R0IouSpZVR8brMCOQbfk0rJqwq6GFKixskYq2JCgkIDj8V4g7xq17AuW95O6LGZnm2LxgMh3RBamb22RybeUOswhaEgnLF4MO0g__&Key-Pair-Id=K1EZH924FG48TE",
+          "https://cdn.playbook.vc/media/thumbnails/uhct8qpwkqwdtgaox2mn?Expires=1724760960&Signature=NWhKZnbCfgZCtUAIW7DwuLwtn4mdpBpcjGDdzXsE~cax3qQiRUzKU9DaJHvyMVcTT0wecBlL~A-jHc6MctQTar8w0P5ArlN8HrLSI8ocqsbbsCuYzoEQvCaBdBtw4UU~rmuFaRlRzZFS9i2udrJqVDgK54JkkoXKShRg~BYe6R0e-HUb-RbTerKx38tSeQ5aTXNLJfbGSGQIBB5rlbMrMJhYdZsoG0KQ1hj7baC8al5vJLX0azBd0FlR8cFJHHG4f2uXhuVYXNMCyn1~cH99HdmIRNDKzm1koPDDQ8ym1Gga2OXuQ5Q9hCKCy9AbdrCKEYGYquz~5cvjrRXavtn5PQ__&Key-Pair-Id=K1EZH924FG48TE"
+        ]
+      },
+      "mgnl:createdBy": {
+        "type": "string",
+        "unique": 1,
+        "cardinality": 0.0,
+        "min_len": 5,
+        "max_len": 5,
+        "samples": [
+          "pnptc"
+        ],
+        "issues": [
+          {
+            "type": "single_value",
+            "message": "All 2223 rows have same value",
+            "value": "pnptc"
+          }
+        ]
+      },
+      "jcr:predecessors": {
+        "type": "list<element: fixed_size_binary[16]>",
+        "nulls": 1799,
+        "null_pct": 80.9,
+        "unique": 424,
+        "cardinality": 1.0,
+        "samples": [
+          "[b':\\x96\\x172W\\xf1G\\xf9\\xb3\\xe4\\xba\\xcc\\x97\\xeb...",
+          "[b'a\\xe4\\x97A\\xae\\x9bH\\xf2\\x9b\\x16\\xb1\\xabM0O\\x...",
+          "[b'\\xaa\\x17\\xc0\\xc2!\\\\E\\x81\\x9d\\xc0=\\xce\\xe1\\xd...",
+          "[b'\\xbc\\x01\\x96\\x19\\xb6\\x9fC\\xb6\\xad\\xd3\\x83\\xe...",
+          "[b'\\xe6a#\\xc0\\xc0\\xacK\\xe5\\x8f\\xa3\\x1f\\xf9O\\xe1..."
+        ]
+      },
+      "mgnl:comment": {
+        "type": "string",
+        "nulls": 1799,
+        "null_pct": 80.9,
+        "unique": 1,
+        "cardinality": 0.002,
+        "min_len": 0,
+        "max_len": 0,
+        "samples": [
+          ""
+        ],
+        "issues": [
+          {
+            "type": "single_value",
+            "message": "All 424 rows have same value",
+            "value": ""
+          }
+        ]
+      },
+      "mgnl:lastModified": {
+        "type": "string",
+        "unique": 1956,
+        "cardinality": 0.88,
+        "min_len": 24,
+        "max_len": 24,
+        "samples": [
+          "2024-11-26T09:56:43.993Z",
+          "2024-11-26T09:56:44.003Z",
+          "2024-11-26T09:56:44.013Z",
+          "2024-11-26T09:56:44.223Z",
+          "2024-11-26T09:56:44.225Z"
+        ]
+      },
+      "startupIsActive": {
+        "type": "bool",
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          true,
+          false
+        ]
+      },
+      "jcr:isCheckedOut": {
+        "type": "bool",
+        "nulls": 1799,
+        "null_pct": 80.9,
+        "unique": 1,
+        "cardinality": 0.002,
+        "samples": [
+          true
+        ],
+        "issues": [
+          {
+            "type": "single_value",
+            "message": "All 424 rows have same value",
+            "value": true
+          }
+        ]
+      },
+      "startupPortfolio": {
+        "type": "bool",
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          true,
+          false
+        ]
+      },
+      "mgnl:lastModifiedBy": {
+        "type": "string",
+        "unique": 5,
+        "cardinality": 0.002,
+        "min_len": 5,
+        "max_len": 16,
+        "samples": [
+          "pnptc",
+          "superuser",
+          "System [ajerrom]",
+          "ajerrom",
+          "System [pnptc]"
+        ]
+      },
+      "startupIndustriesList": {
+        "type": "string",
+        "unique": 2223,
+        "cardinality": 1.0,
+        "min_len": 5994,
+        "max_len": 40254,
+        "samples": [
+          "{\"@name\": \"startupIndustriesList\", \"@path\": \"/stateramedical-com/startupIndustriesList\", \"@id\": \"321529b9-050c-4152-a9fb-a7cceac0f1bd\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"mgnl:lastModified\": \"2025-05-21T18:25:36.333Z\", \"jcr:created\": \"2025-05-21T18:26:04.032Z\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"mgnl:created\": \"2024-08-27T11:07:58.154Z\", \"fff86da1-0d1b-44a1-aa17-0\": {\"@name\": \"fff86da1-0d1b-44a1-aa17-0\", \"@path\": \"/stateramedical-com/startupIndustriesList/fff86da1-0d1b-44a1-aa17-0\", \"@id\": \"e47926b1-8edc-4e47-a5c6-937264898ad7\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"medtech\", \"@path\": \"/medtech\", \"@id\": \"fff86da1-0d1b-44a1-aa17-137435875106\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"a0b0bcef-a8b0-4251-8b00-eaa5109d7837\", \"slug\": \"medtech\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"medtech\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:51.629Z\", \"mgnl:created\": \"2024-05-20T22:28:41.503Z\", \"industryTitle\": \"Medtech\", \"mgnl:createdBy\": \"ajerrom\", \"industryDetailPage\": \"cf38f255-b04e-4001-9fb8-3f6dabbb1435\", \"jcr:predecessors\": [\"04416c99-cbc2-4fde-867d-9a43629ba82a\"], \"jcr:baseVersion\": \"04416c99-cbc2-4fde-867d-9a43629ba82a\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:51:20.715Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:f999dd54-4d38-4e87-853b-e0681b2d7184\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"9e090df4-b4d4-40f7-9c6c-bbd0ab6b9753\", \"@link\": \"https://public.dxp.playbook.vc/medtech.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:08:00.573Z\", \"jcr:created\": \"2025-05-21T18:26:04.032Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:08:00.573Z\", \"@nodes\": []}, \"10541516-8397-48d2-bf61-ea27e690cc5a1\": {\"@name\": \"10541516-8397-48d2-bf61-ea27e690cc5a1\", \"@path\": \"/stateramedical-com/startupIndustriesList/10541516-8397-48d2-bf61-ea27e690cc5a1\", \"@id\": \"42901417-bfad-4cd9-921d-443faadeddc6\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"health\", \"@path\": \"/health\", \"@id\": \"10541516-8397-48d2-bf61-ea27e690cc5a\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"80be5302-d49e-49cc-ba0c-16c21f2e7cc5\", \"slug\": \"health\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"health\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:38.101Z\", \"mgnl:created\": \"2024-05-15T02:01:49.097Z\", \"industryDetailPage\": \"33a1ea4c-eed7-4982-bc2f-e039e82f78e6\", \"mgnl:createdBy\": \"ajerrom\", \"industryTitle\": \"Health\", \"jcr:predecessors\": [\"b1dff2c7-0b54-46e4-8344-486bbfd245e5\"], \"jcr:baseVersion\": \"b1dff2c7-0b54-46e4-8344-486bbfd245e5\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-12-03T19:41:37.599Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:389d4c83-a9e4-4970-a4d9-99d2de658bd3\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"0f21fd46-e7e8-4cdc-9fb3-f605e11f0b4d\", \"@link\": \"https://public.dxp.playbook.vc/health.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:08:03.434Z\", \"jcr:created\": \"2025-05-21T18:26:04.033Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:08:03.434Z\", \"@nodes\": []}, \"@nodes\": [\"fff86da1-0d1b-44a1-aa17-0\", \"10541516-8397-48d2-bf61-ea27e690cc5a1\"], \"mgnl:activationStatus\": null, \"mgnl:lastActivated\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e17\": null, \"8c148491-a0f0-4423-bea7-81260278480b\": null, \"2c02baed-764f-4091-af4b-686ee01f9308\": null, \"b9557710-8a05-432a-8d62-90181ef62199\": null, \"7da339c4-5172-4bdf-9785-de19567785c7\": null, \"5c9a322a-c399-4e63-8b71-a434142544e4\": null, \"0fe965d2-8747-40cb-9da8-c694041373e7\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a\": null, \"27dceb7e-c987-49ed-811b-9c514e443b56\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb21\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d8\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d0\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b1\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf2\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a3\": null, \"8c148491-a0f0-4423-bea7-81260278480b4\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f5\": null, \"2c02baed-764f-4091-af4b-686ee01f6\": null, \"b50a5f37-b61d-4710-99d5-59697e009191\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a0\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf1\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b2\": null, \"2c02baed-764f-4091-af4b-686ee01f3\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c4\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\": null, \"mgnl:lastActivatedBy\": null, \"7da339c4-5172-4bdf-9785-de19567785c0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd5\": null, \"fde43763-9404-45b5-ba2f-310fff1bbc8e\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b1\": null, \"2c02baed-764f-4091-af4b-686ee01f0\": null, \"8c148491-a0f0-4423-bea7-81260278480b1\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f2\": null, \"b9557710-8a05-432a-8d62-90181ef3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf5\": null, \"7da339c4-5172-4bdf-9785-de19567785c6\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d7\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a8\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c9\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c0\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc8\": null, \"b9557710-8a05-432a-8d62-90181ef0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d0\": null, \"b9557710-8a05-432a-8d62-90181ef1\": null, \"8a86eba0-c32a-459e-9de6-864b87f84273\": null, \"fff86da1-0d1b-44a1-aa17-137435875106\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb0\": null, \"7da339c4-5172-4bdf-9785-de19567785c1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c2\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef1\": null, \"27dceb7e-c987-49ed-811b-9c514e443b2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b3\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec3\": null, \"2c02baed-764f-4091-af4b-686ee01f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b2\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d3\": null, \"b9557710-8a05-432a-8d62-90181ef4\": null, \"c312f27b-e761-4671-a4be-e191b2856689\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb1\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a2\": null, \"2c02baed-764f-4091-af4b-686ee01f5\": null, \"0fe965d2-8747-40cb-9da8-c694041373e6\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd7\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd0\": null, \"0fe965d2-8747-40cb-9da8-c694041373e0\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b4\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec5\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d2\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f0\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b3\": null, \"2c02baed-764f-4091-af4b-686ee01f4\": null, \"7da339c4-5172-4bdf-9785-de19567785c2\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb1\": null, \"b9557710-8a05-432a-8d62-90181ef5\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e3\": null, \"0\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb3\": null, \"2c02baed-764f-4091-af4b-686ee01f2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b0\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d1\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b3\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e4\": null, \"b50a5f37-b61d-4710-99d5-59697e0\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf1\": null, \"8c148491-a0f0-4423-bea7-81260278480b0\": null, \"fff86da1-0d1b-44a1-aa17-1\": null, \"5c9a322a-c399-4e63-8b71-a434142544e1\": null, \"0fe965d2-8747-40cb-9da8-c694041373e3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef0\": null, \"5f26069a-773b-47ef-b72e-96b7b50a8e6b\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf0\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c1\": null, \"d8f723e1-7c05-4250-a09e-bef0f653d03f\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec1\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d2\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc3\": null, \"8c148491-a0f0-4423-bea7-81260278480b5\": null, \"b9557710-8a05-432a-8d62-90181ef2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb4\": null}",
+          "{\"@name\": \"startupIndustriesList\", \"@path\": \"/airwallex-com/startupIndustriesList\", \"@id\": \"11c1f5b5-51f3-46a4-b0c0-8dba4e57af64\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"mgnl:lastModified\": \"2024-08-27T12:11:57.928Z\", \"jcr:created\": \"2024-12-12T14:48:59.419Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T12:11:55.361Z\", \"fff86da1-0d1b-44a1-aa17-0\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a1\": null, \"@nodes\": [\"cbf05043-f396-4e30-a63a-4cd20ab9367d\"], \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:01:53.088Z\", \"cbf05043-f396-4e30-a63a-4cd20ab9367d\": {\"@name\": \"cbf05043-f396-4e30-a63a-4cd20ab9367d\", \"@path\": \"/airwallex-com/startupIndustriesList/cbf05043-f396-4e30-a63a-4cd20ab9367d\", \"@id\": \"4c19ed49-f187-4e11-8b48-f48501c5b8f5\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"fintech\", \"@path\": \"/fintech\", \"@id\": \"cbf05043-f396-4e30-a63a-4cd20ab9367d\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"81ee25b5-a3c8-4915-96d9-4a7ed343b62e\", \"slug\": \"fintech\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"fintech\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:31.377Z\", \"mgnl:created\": \"2024-05-08T14:46:56.693Z\", \"industryDetailPage\": \"c8ea7ee2-cac4-44fb-a979-ae1cf5d452e9\", \"industryTitle\": \"Fintech\", \"mgnl:createdBy\": \"dmunoz\", \"jcr:predecessors\": [\"d17d9c22-bb71-4446-bcd6-fe4ed1918716\"], \"jcr:baseVersion\": \"d17d9c22-bb71-4446-bcd6-fe4ed1918716\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:49:00.798Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:943f1f29-7d37-46a3-8432-4bcb0508ec34\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"e4edf5ac-6401-45ae-abbc-6888ea8a45cd\", \"@link\": \"https://public.dxp.playbook.vc/fintech.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T12:11:57.929Z\", \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:01:53.089Z\", \"jcr:created\": \"2024-12-12T14:48:59.420Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T12:11:57.929Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e17\": null, \"8c148491-a0f0-4423-bea7-81260278480b\": null, \"2c02baed-764f-4091-af4b-686ee01f9308\": null, \"b9557710-8a05-432a-8d62-90181ef62199\": null, \"7da339c4-5172-4bdf-9785-de19567785c7\": null, \"5c9a322a-c399-4e63-8b71-a434142544e4\": null, \"0fe965d2-8747-40cb-9da8-c694041373e7\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a\": null, \"27dceb7e-c987-49ed-811b-9c514e443b56\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb21\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d8\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d0\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b1\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf2\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a3\": null, \"8c148491-a0f0-4423-bea7-81260278480b4\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f5\": null, \"2c02baed-764f-4091-af4b-686ee01f6\": null, \"b50a5f37-b61d-4710-99d5-59697e009191\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a0\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf1\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b2\": null, \"2c02baed-764f-4091-af4b-686ee01f3\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c4\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\": null, \"mgnl:lastActivatedBy\": null, \"7da339c4-5172-4bdf-9785-de19567785c0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd5\": null, \"fde43763-9404-45b5-ba2f-310fff1bbc8e\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b1\": null, \"2c02baed-764f-4091-af4b-686ee01f0\": null, \"8c148491-a0f0-4423-bea7-81260278480b1\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f2\": null, \"b9557710-8a05-432a-8d62-90181ef3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf5\": null, \"7da339c4-5172-4bdf-9785-de19567785c6\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d7\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a8\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c9\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c0\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc8\": null, \"b9557710-8a05-432a-8d62-90181ef0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d0\": null, \"b9557710-8a05-432a-8d62-90181ef1\": null, \"8a86eba0-c32a-459e-9de6-864b87f84273\": null, \"fff86da1-0d1b-44a1-aa17-137435875106\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb0\": null, \"7da339c4-5172-4bdf-9785-de19567785c1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c2\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef1\": null, \"27dceb7e-c987-49ed-811b-9c514e443b2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b3\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec3\": null, \"2c02baed-764f-4091-af4b-686ee01f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b2\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d3\": null, \"b9557710-8a05-432a-8d62-90181ef4\": null, \"c312f27b-e761-4671-a4be-e191b2856689\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb1\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a2\": null, \"2c02baed-764f-4091-af4b-686ee01f5\": null, \"0fe965d2-8747-40cb-9da8-c694041373e6\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd7\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd0\": null, \"0fe965d2-8747-40cb-9da8-c694041373e0\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b4\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec5\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d2\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f0\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b3\": null, \"2c02baed-764f-4091-af4b-686ee01f4\": null, \"7da339c4-5172-4bdf-9785-de19567785c2\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb1\": null, \"b9557710-8a05-432a-8d62-90181ef5\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e3\": null, \"0\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb3\": null, \"2c02baed-764f-4091-af4b-686ee01f2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b0\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d1\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b3\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e4\": null, \"b50a5f37-b61d-4710-99d5-59697e0\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf1\": null, \"8c148491-a0f0-4423-bea7-81260278480b0\": null, \"fff86da1-0d1b-44a1-aa17-1\": null, \"5c9a322a-c399-4e63-8b71-a434142544e1\": null, \"0fe965d2-8747-40cb-9da8-c694041373e3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef0\": null, \"5f26069a-773b-47ef-b72e-96b7b50a8e6b\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf0\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c1\": null, \"d8f723e1-7c05-4250-a09e-bef0f653d03f\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec1\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d2\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc3\": null, \"8c148491-a0f0-4423-bea7-81260278480b5\": null, \"b9557710-8a05-432a-8d62-90181ef2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb4\": null}",
+          "{\"@name\": \"startupIndustriesList\", \"@path\": \"/apptronik-com/startupIndustriesList\", \"@id\": \"7033335b-1fc7-40cb-a724-a11a7e8e2077\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"mgnl:lastModified\": \"2024-08-27T10:57:58.347Z\", \"jcr:created\": \"2024-12-12T14:49:04.296Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T10:57:47.818Z\", \"fff86da1-0d1b-44a1-aa17-0\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a1\": null, \"@nodes\": [\"7b3d4d10-2426-4a8c-a942-26f1ee358b67\", \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"195b37bb-cd76-4683-84f8-fee804d956bf\"], \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:00.974Z\", \"cbf05043-f396-4e30-a63a-4cd20ab9367d\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\": {\"@name\": \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\", \"@path\": \"/apptronik-com/startupIndustriesList/7b3d4d10-2426-4a8c-a942-26f1ee358b67\", \"@id\": \"3c24ada4-881d-4cb5-a02d-2791914dc827\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"supply-chain\", \"@path\": \"/supply-chain\", \"@id\": \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"3ef1900f-fa97-4a6f-a44a-25d9d5e657ee\", \"slug\": \"supply-chain\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"supply-chain\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:06:15.216Z\", \"mgnl:created\": \"2024-05-08T14:54:35.865Z\", \"industryDetailPage\": \"88db23ae-afd6-4664-89e2-66e5e05a42c8\", \"mgnl:createdBy\": \"dmunoz\", \"industryTitle\": \"Supply Chain\", \"jcr:predecessors\": [\"b472dc00-e072-43e6-956f-613e884a2023\"], \"jcr:baseVersion\": \"b472dc00-e072-43e6-956f-613e884a2023\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:54:29.211Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:e260b57d-983a-4140-992d-b095eb568195\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"6fe5f498-4f9c-4daa-90d4-0b5358bd59d2\", \"@link\": \"https://public.dxp.playbook.vc/supply-chain.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T10:57:51.747Z\", \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:00.976Z\", \"jcr:created\": \"2024-12-12T14:49:04.297Z\", \"mgnl:created\": \"2024-08-27T10:57:51.747Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\": {\"@name\": \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"@path\": \"/apptronik-com/startupIndustriesList/c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"@id\": \"8e2db22a-df9b-4e07-9236-e12f203135c4\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"brand-and-retail\", \"@path\": \"/brand-and-retail\", \"@id\": \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"bfb16b80-74f7-45b7-b543-5b597f2690d5\", \"slug\": \"brand-and-retail\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"brand-and-retail\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:14.975Z\", \"mgnl:created\": \"2024-05-13T22:27:44.148Z\", \"industryDetailPage\": \"c8f44273-67ca-4200-bd19-4b216e6e96fb\", \"industryTitle\": \"Brand & Retail\", \"mgnl:createdBy\": \"ajerrom\", \"jcr:predecessors\": [\"009f920b-2be2-4890-85cf-d808032e51ba\"], \"jcr:baseVersion\": \"009f920b-2be2-4890-85cf-d808032e51ba\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-09-03T06:09:00.445Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:7b60f84c-c452-48ff-88fb-d9aa1d58add8\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"0305bcc6-ebf7-4a46-a3bb-4a5b9b113858\", \"@link\": \"https://public.dxp.playbook.vc/brand-and-retail.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T10:57:55.042Z\", \"mgnl:activationStatus\": true, \"jcr:created\": \"2024-12-12T14:49:04.298Z\", \"mgnl:lastActivated\": \"2024-11-26T11:02:00.977Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T10:57:55.042Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"195b37bb-cd76-4683-84f8-fee804d956bf\": {\"@name\": \"195b37bb-cd76-4683-84f8-fee804d956bf\", \"@path\": \"/apptronik-com/startupIndustriesList/195b37bb-cd76-4683-84f8-fee804d956bf\", \"@id\": \"821f7f03-e53f-429b-bb6b-0b252f93bb9f\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"food-and-beverage\", \"@path\": \"/food-and-beverage\", \"@id\": \"195b37bb-cd76-4683-84f8-fee804d956bf\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"c7e8cba9-5ad0-4abf-bce8-de2603c8a003\", \"slug\": \"food-and-beverage\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"food-and-beverage\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:34.910Z\", \"mgnl:created\": \"2024-05-15T01:59:49.785Z\", \"industryDetailPage\": \"59fdc9a9-ad1d-4d1a-8a13-a0f6a21ffd65\", \"mgnl:createdBy\": \"ajerrom\", \"industryTitle\": \"Food & Beverage\", \"jcr:predecessors\": [\"249d701d-85e2-4762-8268-a9603ebb8f61\"], \"jcr:baseVersion\": \"249d701d-85e2-4762-8268-a9603ebb8f61\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:49:39.802Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:d9d7709c-6a65-4311-a218-616ed92cdc37\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"cd5b3dd5-b75f-4f07-ab26-b41f85000c3b\", \"@link\": \"https://public.dxp.playbook.vc/food-and-beverage.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T10:57:58.354Z\", \"mgnl:activationStatus\": true, \"jcr:created\": \"2024-12-12T14:49:04.299Z\", \"mgnl:lastActivated\": \"2024-11-26T11:02:00.978Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T10:57:58.354Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e17\": null, \"8c148491-a0f0-4423-bea7-81260278480b\": null, \"2c02baed-764f-4091-af4b-686ee01f9308\": null, \"b9557710-8a05-432a-8d62-90181ef62199\": null, \"7da339c4-5172-4bdf-9785-de19567785c7\": null, \"5c9a322a-c399-4e63-8b71-a434142544e4\": null, \"0fe965d2-8747-40cb-9da8-c694041373e7\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a\": null, \"27dceb7e-c987-49ed-811b-9c514e443b56\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb21\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d8\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d0\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b1\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf2\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a3\": null, \"8c148491-a0f0-4423-bea7-81260278480b4\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f5\": null, \"2c02baed-764f-4091-af4b-686ee01f6\": null, \"b50a5f37-b61d-4710-99d5-59697e009191\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a0\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf1\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b2\": null, \"2c02baed-764f-4091-af4b-686ee01f3\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c4\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\": null, \"mgnl:lastActivatedBy\": null, \"7da339c4-5172-4bdf-9785-de19567785c0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd5\": null, \"fde43763-9404-45b5-ba2f-310fff1bbc8e\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b1\": null, \"2c02baed-764f-4091-af4b-686ee01f0\": null, \"8c148491-a0f0-4423-bea7-81260278480b1\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f2\": null, \"b9557710-8a05-432a-8d62-90181ef3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf5\": null, \"7da339c4-5172-4bdf-9785-de19567785c6\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d7\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a8\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c9\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c0\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc8\": null, \"b9557710-8a05-432a-8d62-90181ef0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d0\": null, \"b9557710-8a05-432a-8d62-90181ef1\": null, \"8a86eba0-c32a-459e-9de6-864b87f84273\": null, \"fff86da1-0d1b-44a1-aa17-137435875106\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb0\": null, \"7da339c4-5172-4bdf-9785-de19567785c1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c2\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef1\": null, \"27dceb7e-c987-49ed-811b-9c514e443b2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b3\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec3\": null, \"2c02baed-764f-4091-af4b-686ee01f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b2\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d3\": null, \"b9557710-8a05-432a-8d62-90181ef4\": null, \"c312f27b-e761-4671-a4be-e191b2856689\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb1\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a2\": null, \"2c02baed-764f-4091-af4b-686ee01f5\": null, \"0fe965d2-8747-40cb-9da8-c694041373e6\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd7\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd0\": null, \"0fe965d2-8747-40cb-9da8-c694041373e0\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b4\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec5\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d2\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f0\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b3\": null, \"2c02baed-764f-4091-af4b-686ee01f4\": null, \"7da339c4-5172-4bdf-9785-de19567785c2\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb1\": null, \"b9557710-8a05-432a-8d62-90181ef5\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e3\": null, \"0\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb3\": null, \"2c02baed-764f-4091-af4b-686ee01f2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b0\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d1\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b3\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e4\": null, \"b50a5f37-b61d-4710-99d5-59697e0\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf1\": null, \"8c148491-a0f0-4423-bea7-81260278480b0\": null, \"fff86da1-0d1b-44a1-aa17-1\": null, \"5c9a322a-c399-4e63-8b71-a434142544e1\": null, \"0fe965d2-8747-40cb-9da8-c694041373e3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef0\": null, \"5f26069a-773b-47ef-b72e-96b7b50a8e6b\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf0\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c1\": null, \"d8f723e1-7c05-4250-a09e-bef0f653d03f\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec1\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d2\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc3\": null, \"8c148491-a0f0-4423-bea7-81260278480b5\": null, \"b9557710-8a05-432a-8d62-90181ef2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb4\": null}",
+          "{\"@name\": \"startupIndustriesList\", \"@path\": \"/resultid-ai/startupIndustriesList\", \"@id\": \"7a81493f-6663-4854-b747-0b49677d5d82\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"mgnl:lastModified\": \"2024-08-27T11:29:37.959Z\", \"jcr:created\": \"2024-12-12T14:49:09.738Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:29:26.206Z\", \"fff86da1-0d1b-44a1-aa17-0\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a1\": null, \"@nodes\": [\"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"195b37bb-cd76-4683-84f8-fee804d956bf\", \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\", \"07f99bb0-68be-46e6-abf5-6400800c9e17\", \"8c148491-a0f0-4423-bea7-81260278480b\", \"2c02baed-764f-4091-af4b-686ee01f9308\"], \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:09.077Z\", \"cbf05043-f396-4e30-a63a-4cd20ab9367d\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\": {\"@name\": \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"@path\": \"/resultid-ai/startupIndustriesList/c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"@id\": \"baf95e86-2aba-4f3d-8e88-96b55a8a6559\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"brand-and-retail\", \"@path\": \"/brand-and-retail\", \"@id\": \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"bfb16b80-74f7-45b7-b543-5b597f2690d5\", \"slug\": \"brand-and-retail\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"brand-and-retail\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:14.975Z\", \"mgnl:created\": \"2024-05-13T22:27:44.148Z\", \"industryDetailPage\": \"c8f44273-67ca-4200-bd19-4b216e6e96fb\", \"industryTitle\": \"Brand & Retail\", \"mgnl:createdBy\": \"ajerrom\", \"jcr:predecessors\": [\"009f920b-2be2-4890-85cf-d808032e51ba\"], \"jcr:baseVersion\": \"009f920b-2be2-4890-85cf-d808032e51ba\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-09-03T06:09:00.445Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:7b60f84c-c452-48ff-88fb-d9aa1d58add8\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"0305bcc6-ebf7-4a46-a3bb-4a5b9b113858\", \"@link\": \"https://public.dxp.playbook.vc/brand-and-retail.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:29:28.412Z\", \"mgnl:activationStatus\": true, \"jcr:created\": \"2024-12-12T14:49:09.739Z\", \"mgnl:lastActivated\": \"2024-11-26T11:02:09.078Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:29:28.412Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"195b37bb-cd76-4683-84f8-fee804d956bf\": {\"@name\": \"195b37bb-cd76-4683-84f8-fee804d956bf\", \"@path\": \"/resultid-ai/startupIndustriesList/195b37bb-cd76-4683-84f8-fee804d956bf\", \"@id\": \"3504c552-3b4a-41b6-b721-af0d0470a0d0\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"food-and-beverage\", \"@path\": \"/food-and-beverage\", \"@id\": \"195b37bb-cd76-4683-84f8-fee804d956bf\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"c7e8cba9-5ad0-4abf-bce8-de2603c8a003\", \"slug\": \"food-and-beverage\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"food-and-beverage\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:34.910Z\", \"mgnl:created\": \"2024-05-15T01:59:49.785Z\", \"industryDetailPage\": \"59fdc9a9-ad1d-4d1a-8a13-a0f6a21ffd65\", \"mgnl:createdBy\": \"ajerrom\", \"industryTitle\": \"Food & Beverage\", \"jcr:predecessors\": [\"249d701d-85e2-4762-8268-a9603ebb8f61\"], \"jcr:baseVersion\": \"249d701d-85e2-4762-8268-a9603ebb8f61\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:49:39.802Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:d9d7709c-6a65-4311-a218-616ed92cdc37\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"cd5b3dd5-b75f-4f07-ab26-b41f85000c3b\", \"@link\": \"https://public.dxp.playbook.vc/food-and-beverage.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:29:30.717Z\", \"mgnl:activationStatus\": true, \"jcr:created\": \"2024-12-12T14:49:09.739Z\", \"mgnl:lastActivated\": \"2024-11-26T11:02:09.080Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:29:30.717Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\": {\"@name\": \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\", \"@path\": \"/resultid-ai/startupIndustriesList/cb1ee6ad-ba1d-4559-ac6a-905edafccedb\", \"@id\": \"9e112f0d-9421-484b-8119-670797dc4644\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"mobility\", \"@path\": \"/mobility\", \"@id\": \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"6447a0b6-dc46-4380-96e0-0c283de44b46\", \"slug\": \"mobility-physical-ai\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"mobility\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:54.986Z\", \"mgnl:created\": \"2024-05-08T14:53:30.644Z\", \"industryDetailPage\": \"dc4fa7b0-19fe-494e-8169-85253f30e3a3\", \"mgnl:createdBy\": \"dmunoz\", \"industryTitle\": \"Mobility & Physical AI\", \"jcr:predecessors\": [\"1072f9cc-e06c-4d89-ac1f-42ea1a65776e\"], \"jcr:baseVersion\": \"1072f9cc-e06c-4d89-ac1f-42ea1a65776e\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:45:34.718Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:73b353cb-f00e-4ea0-a36d-945fc9f6c8a6\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"3bfb9d3b-839e-42c4-8ca7-0803fe3c16c1\", \"@link\": \"https://public.dxp.playbook.vc/mobility.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:29:32.694Z\", \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:09.081Z\", \"jcr:created\": \"2024-12-12T14:49:09.740Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:29:32.694Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"07f99bb0-68be-46e6-abf5-6400800c9e17\": {\"@name\": \"07f99bb0-68be-46e6-abf5-6400800c9e17\", \"@path\": \"/resultid-ai/startupIndustriesList/07f99bb0-68be-46e6-abf5-6400800c9e17\", \"@id\": \"d5066594-5e85-4d29-a483-b8c3a80ca49d\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": \"07f99bb0-68be-46e6-abf5-6400800c9e17\", \"mgnl:lastModified\": \"2024-08-27T11:29:34.803Z\", \"mgnl:activationStatus\": true, \"jcr:created\": \"2024-12-12T14:49:09.743Z\", \"mgnl:lastActivated\": \"2024-11-26T11:02:09.082Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:29:34.803Z\", \"@nodes\": []}, \"8c148491-a0f0-4423-bea7-81260278480b\": {\"@name\": \"8c148491-a0f0-4423-bea7-81260278480b\", \"@path\": \"/resultid-ai/startupIndustriesList/8c148491-a0f0-4423-bea7-81260278480b\", \"@id\": \"650fc0a4-6268-4f00-b29e-2bc9307a5f1f\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"travel-and-hospitality\", \"@path\": \"/travel-and-hospitality\", \"@id\": \"8c148491-a0f0-4423-bea7-81260278480b\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"2e254d56-00f2-41af-8c7a-7f732ff4905f\", \"slug\": \"travel-and-hospitality\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"travel-and-hospitality\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:06:21.729Z\", \"mgnl:created\": \"2024-05-15T19:07:53.113Z\", \"mgnl:createdBy\": \"ajerrom\", \"industryDetailPage\": \"0adb5ba2-9257-4ca6-b33b-93fcb554dcfc\", \"industryTitle\": \"Travel & Hospitality\", \"jcr:predecessors\": [\"fe7e7085-f269-4895-a23f-cfd4e5834520\"], \"jcr:baseVersion\": \"fe7e7085-f269-4895-a23f-cfd4e5834520\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:54:43.646Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:d29e440e-fa71-40d1-af6e-5292fa63ac09\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"ed285127-acea-4652-89d1-721dee0c3644\", \"@link\": \"https://public.dxp.playbook.vc/travel-and-hospitality.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:29:36.366Z\", \"mgnl:activationStatus\": true, \"jcr:created\": \"2024-12-12T14:49:09.743Z\", \"mgnl:lastActivated\": \"2024-11-26T11:02:09.083Z\", \"mgnl:created\": \"2024-08-27T11:29:36.366Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"2c02baed-764f-4091-af4b-686ee01f9308\": {\"@name\": \"2c02baed-764f-4091-af4b-686ee01f9308\", \"@path\": \"/resultid-ai/startupIndustriesList/2c02baed-764f-4091-af4b-686ee01f9308\", \"@id\": \"a01f5db3-1ea9-47f2-90f0-f6140032187d\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"enterprise-and-ai\", \"@path\": \"/enterprise-and-ai\", \"@id\": \"2c02baed-764f-4091-af4b-686ee01f9308\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"85ca1b53-5ec9-45d4-afc6-39c3fc93d382\", \"slug\": \"enterprise-and-ai\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"enterprise-and-ai\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:28.181Z\", \"mgnl:created\": \"2024-05-15T01:58:56.936Z\", \"mgnl:createdBy\": \"ajerrom\", \"industryDetailPage\": \"828f83d2-4184-45ac-b2f0-6ecc9ba99a34\", \"industryTitle\": \"Enterprise & AI\", \"jcr:predecessors\": [\"5bf660fd-e6d2-41fd-b5da-81890ef24d5a\"], \"jcr:baseVersion\": \"5bf660fd-e6d2-41fd-b5da-81890ef24d5a\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:53:41.112Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:8363e0ba-2b92-4d02-a1d3-2d94e493e7be\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"98b37d1e-bbd3-4bf4-91cb-97ff94494112\", \"@link\": \"https://public.dxp.playbook.vc/enterprise-and-ai.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:29:37.959Z\", \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:09.085Z\", \"jcr:created\": \"2024-12-12T14:49:09.744Z\", \"mgnl:created\": \"2024-08-27T11:29:37.959Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"b9557710-8a05-432a-8d62-90181ef62199\": null, \"7da339c4-5172-4bdf-9785-de19567785c7\": null, \"5c9a322a-c399-4e63-8b71-a434142544e4\": null, \"0fe965d2-8747-40cb-9da8-c694041373e7\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a\": null, \"27dceb7e-c987-49ed-811b-9c514e443b56\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb21\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d8\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d0\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b1\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf2\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a3\": null, \"8c148491-a0f0-4423-bea7-81260278480b4\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f5\": null, \"2c02baed-764f-4091-af4b-686ee01f6\": null, \"b50a5f37-b61d-4710-99d5-59697e009191\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a0\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf1\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b2\": null, \"2c02baed-764f-4091-af4b-686ee01f3\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c4\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\": null, \"mgnl:lastActivatedBy\": null, \"7da339c4-5172-4bdf-9785-de19567785c0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd5\": null, \"fde43763-9404-45b5-ba2f-310fff1bbc8e\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b1\": null, \"2c02baed-764f-4091-af4b-686ee01f0\": null, \"8c148491-a0f0-4423-bea7-81260278480b1\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f2\": null, \"b9557710-8a05-432a-8d62-90181ef3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf5\": null, \"7da339c4-5172-4bdf-9785-de19567785c6\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d7\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a8\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c9\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c0\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc8\": null, \"b9557710-8a05-432a-8d62-90181ef0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d0\": null, \"b9557710-8a05-432a-8d62-90181ef1\": null, \"8a86eba0-c32a-459e-9de6-864b87f84273\": null, \"fff86da1-0d1b-44a1-aa17-137435875106\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb0\": null, \"7da339c4-5172-4bdf-9785-de19567785c1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c2\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef1\": null, \"27dceb7e-c987-49ed-811b-9c514e443b2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b3\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec3\": null, \"2c02baed-764f-4091-af4b-686ee01f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b2\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d3\": null, \"b9557710-8a05-432a-8d62-90181ef4\": null, \"c312f27b-e761-4671-a4be-e191b2856689\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb1\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a2\": null, \"2c02baed-764f-4091-af4b-686ee01f5\": null, \"0fe965d2-8747-40cb-9da8-c694041373e6\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd7\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd0\": null, \"0fe965d2-8747-40cb-9da8-c694041373e0\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b4\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec5\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d2\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f0\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b3\": null, \"2c02baed-764f-4091-af4b-686ee01f4\": null, \"7da339c4-5172-4bdf-9785-de19567785c2\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb1\": null, \"b9557710-8a05-432a-8d62-90181ef5\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e3\": null, \"0\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb3\": null, \"2c02baed-764f-4091-af4b-686ee01f2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b0\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d1\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b3\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e4\": null, \"b50a5f37-b61d-4710-99d5-59697e0\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf1\": null, \"8c148491-a0f0-4423-bea7-81260278480b0\": null, \"fff86da1-0d1b-44a1-aa17-1\": null, \"5c9a322a-c399-4e63-8b71-a434142544e1\": null, \"0fe965d2-8747-40cb-9da8-c694041373e3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef0\": null, \"5f26069a-773b-47ef-b72e-96b7b50a8e6b\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf0\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c1\": null, \"d8f723e1-7c05-4250-a09e-bef0f653d03f\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec1\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d2\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc3\": null, \"8c148491-a0f0-4423-bea7-81260278480b5\": null, \"b9557710-8a05-432a-8d62-90181ef2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb4\": null}",
+          "{\"@name\": \"startupIndustriesList\", \"@path\": \"/en-walletstudio-com/startupIndustriesList\", \"@id\": \"b6090b80-1c02-4e76-a932-f79fdbb39c29\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"mgnl:lastModified\": \"2024-08-27T11:53:35.957Z\", \"jcr:created\": \"2024-12-12T14:49:13.141Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:53:31.255Z\", \"fff86da1-0d1b-44a1-aa17-0\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a1\": null, \"@nodes\": [\"b9557710-8a05-432a-8d62-90181ef62199\", \"cbf05043-f396-4e30-a63a-4cd20ab9367d\"], \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:17.234Z\", \"cbf05043-f396-4e30-a63a-4cd20ab9367d\": {\"@name\": \"cbf05043-f396-4e30-a63a-4cd20ab9367d\", \"@path\": \"/en-walletstudio-com/startupIndustriesList/cbf05043-f396-4e30-a63a-4cd20ab9367d\", \"@id\": \"27918c4b-8a98-4d9c-86bb-3abb7411befa\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"fintech\", \"@path\": \"/fintech\", \"@id\": \"cbf05043-f396-4e30-a63a-4cd20ab9367d\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"81ee25b5-a3c8-4915-96d9-4a7ed343b62e\", \"slug\": \"fintech\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"fintech\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:31.377Z\", \"mgnl:created\": \"2024-05-08T14:46:56.693Z\", \"industryDetailPage\": \"c8ea7ee2-cac4-44fb-a979-ae1cf5d452e9\", \"industryTitle\": \"Fintech\", \"mgnl:createdBy\": \"dmunoz\", \"jcr:predecessors\": [\"d17d9c22-bb71-4446-bcd6-fe4ed1918716\"], \"jcr:baseVersion\": \"d17d9c22-bb71-4446-bcd6-fe4ed1918716\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:49:00.798Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:943f1f29-7d37-46a3-8432-4bcb0508ec34\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"e4edf5ac-6401-45ae-abbc-6888ea8a45cd\", \"@link\": \"https://public.dxp.playbook.vc/fintech.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:53:35.958Z\", \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:17.238Z\", \"jcr:created\": \"2024-12-12T14:49:13.145Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:53:35.958Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"7b3d4d10-2426-4a8c-a942-26f1ee358b67\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e17\": null, \"8c148491-a0f0-4423-bea7-81260278480b\": null, \"2c02baed-764f-4091-af4b-686ee01f9308\": null, \"b9557710-8a05-432a-8d62-90181ef62199\": {\"@name\": \"b9557710-8a05-432a-8d62-90181ef62199\", \"@path\": \"/en-walletstudio-com/startupIndustriesList/b9557710-8a05-432a-8d62-90181ef62199\", \"@id\": \"b34aba50-bf10-403e-96da-14b752ec6e53\", \"@nodeType\": \"mgnl:contentNode\", \"mgnl:createdBy\": \"pnptc\", \"jcr:createdBy\": \"admin\", \"startupIndustry\": {\"@name\": \"insurtech\", \"@path\": \"/insurtech\", \"@id\": \"b9557710-8a05-432a-8d62-90181ef62199\", \"@nodeType\": \"mt:industries\", \"industryLastInsightMain\": \"81ee25b5-a3c8-4915-96d9-4a7ed343b62e\", \"slug\": \"insurtech\", \"jcr:createdBy\": \"admin\", \"industryIsActive\": true, \"name\": \"insurtech\", \"jcr:mixinTypes\": [\"mix:versionable\", \"mgnl:hasVersion\"], \"jcr:created\": \"2024-06-02T00:05:41.352Z\", \"mgnl:created\": \"2024-05-15T01:57:37.178Z\", \"mgnl:createdBy\": \"ajerrom\", \"industryDetailPage\": \"eaa9183b-fce8-4501-a054-3ace55790401\", \"industryTitle\": \"Insurtech\", \"jcr:predecessors\": [\"5b7099eb-f416-48dd-b77e-9152602875f4\"], \"jcr:baseVersion\": \"5b7099eb-f416-48dd-b77e-9152602875f4\", \"mgnl:comment\": \"\", \"mgnl:lastModified\": \"2025-07-29T05:50:24.772Z\", \"jcr:isCheckedOut\": true, \"industryImage\": \"jcr:39e81557-637a-4bd4-870b-efa664d59de6\", \"mgnl:lastModifiedBy\": \"ajerrom\", \"jcr:versionHistory\": \"4772bc0d-7cbe-41aa-8f80-fc7290071e62\", \"@link\": \"https://public.dxp.playbook.vc/insurtech.html\", \"@nodes\": []}, \"mgnl:lastModified\": \"2024-08-27T11:53:33.610Z\", \"mgnl:activationStatus\": true, \"mgnl:lastActivated\": \"2024-11-26T11:02:17.237Z\", \"jcr:created\": \"2024-12-12T14:49:13.144Z\", \"mgnl:lastModifiedBy\": \"pnptc\", \"mgnl:created\": \"2024-08-27T11:53:33.610Z\", \"@nodes\": [], \"mgnl:lastActivatedBy\": null}, \"7da339c4-5172-4bdf-9785-de19567785c7\": null, \"5c9a322a-c399-4e63-8b71-a434142544e4\": null, \"0fe965d2-8747-40cb-9da8-c694041373e7\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c40\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef2\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a\": null, \"27dceb7e-c987-49ed-811b-9c514e443b56\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb21\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d8\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d0\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b1\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf2\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a3\": null, \"8c148491-a0f0-4423-bea7-81260278480b4\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f5\": null, \"2c02baed-764f-4091-af4b-686ee01f6\": null, \"b50a5f37-b61d-4710-99d5-59697e009191\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a0\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf1\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b2\": null, \"2c02baed-764f-4091-af4b-686ee01f3\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c4\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf9463\": null, \"mgnl:lastActivatedBy\": null, \"7da339c4-5172-4bdf-9785-de19567785c0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd5\": null, \"fde43763-9404-45b5-ba2f-310fff1bbc8e\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b1\": null, \"2c02baed-764f-4091-af4b-686ee01f0\": null, \"8c148491-a0f0-4423-bea7-81260278480b1\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f2\": null, \"b9557710-8a05-432a-8d62-90181ef3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef4\": null, \"195b37bb-cd76-4683-84f8-fee804d956bf5\": null, \"7da339c4-5172-4bdf-9785-de19567785c6\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d7\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a8\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c9\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c0\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc8\": null, \"b9557710-8a05-432a-8d62-90181ef0\": null, \"27dceb7e-c987-49ed-811b-9c514e443b0\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d0\": null, \"b9557710-8a05-432a-8d62-90181ef1\": null, \"8a86eba0-c32a-459e-9de6-864b87f84273\": null, \"fff86da1-0d1b-44a1-aa17-137435875106\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb0\": null, \"7da339c4-5172-4bdf-9785-de19567785c1\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c2\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef1\": null, \"27dceb7e-c987-49ed-811b-9c514e443b2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b3\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec3\": null, \"2c02baed-764f-4091-af4b-686ee01f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b2\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d3\": null, \"b9557710-8a05-432a-8d62-90181ef4\": null, \"c312f27b-e761-4671-a4be-e191b2856689\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb1\": null, \"bb991fd6-b9f2-4301-9fab-82212795fd2a2\": null, \"2c02baed-764f-4091-af4b-686ee01f5\": null, \"0fe965d2-8747-40cb-9da8-c694041373e6\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd7\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd0\": null, \"0fe965d2-8747-40cb-9da8-c694041373e0\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b4\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec5\": null, \"cbf05043-f396-4e30-a63a-4cd20ab9367d2\": null, \"24b2b3af-c238-455f-8dbc-3881097ad3f0\": null, \"c283fc2f-68cf-4339-8d8a-a2ad1502c5f1\": null, \"8c148491-a0f0-4423-bea7-81260278480b3\": null, \"2c02baed-764f-4091-af4b-686ee01f4\": null, \"7da339c4-5172-4bdf-9785-de19567785c2\": null, \"97c04130-eaf8-414f-9511-da9143f1ebd3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb1\": null, \"b9557710-8a05-432a-8d62-90181ef5\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e3\": null, \"0\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb3\": null, \"2c02baed-764f-4091-af4b-686ee01f2\": null, \"7b3d4d10-2426-4a8c-a942-26f1ee358b0\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d1\": null, \"10541516-8397-48d2-bf61-ea27e690cc5a2\": null, \"27dceb7e-c987-49ed-811b-9c514e443b3\": null, \"07f99bb0-68be-46e6-abf5-6400800c9e4\": null, \"b50a5f37-b61d-4710-99d5-59697e0\": null, \"d6a26b75-07c4-491d-a3f6-1ecb38bf1\": null, \"8c148491-a0f0-4423-bea7-81260278480b0\": null, \"fff86da1-0d1b-44a1-aa17-1\": null, \"5c9a322a-c399-4e63-8b71-a434142544e1\": null, \"0fe965d2-8747-40cb-9da8-c694041373e3\": null, \"10bf4a4d-31d0-44f1-b5f4-250a5e9f9ef0\": null, \"5f26069a-773b-47ef-b72e-96b7b50a8e6b\": null, \"7f70e209-aa57-4252-940f-be3aeef5bb0\": null, \"5d22c0e2-8d52-41da-a632-386f0ab7caaf0\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c1\": null, \"d8f723e1-7c05-4250-a09e-bef0f653d03f\": null, \"9361b669-f4f2-47d7-8e04-278dc1415cec1\": null, \"b925a072-a8ef-4573-bd87-f95dcc7180d2\": null, \"a956b45d-b554-4a3f-a2cb-76d576b5fdc3\": null, \"8c148491-a0f0-4423-bea7-81260278480b5\": null, \"b9557710-8a05-432a-8d62-90181ef2\": null, \"fedcf68e-6db7-4c50-9c7d-9d954e3e5c3\": null, \"cb1ee6ad-ba1d-4559-ac6a-905edafccedb4\": null}"
+        ]
+      },
+      "@nodes": {
+        "type": "list<element: string>",
+        "unique": 1,
+        "cardinality": 0.0,
+        "samples": [
+          "['startupIndustriesList']"
+        ]
+      },
+      "mgnl:lastActivated": {
+        "type": "string",
+        "nulls": 361,
+        "null_pct": 16.2,
+        "unique": 1491,
+        "cardinality": 0.801,
+        "min_len": 24,
+        "max_len": 24,
+        "samples": [
+          "2024-11-26T11:01:53.087Z",
+          "2024-11-26T11:14:03.276Z",
+          "2024-11-26T11:14:07.082Z",
+          "2024-11-26T11:14:10.661Z",
+          "2024-11-26T11:14:18.693Z"
+        ]
+      },
+      "mgnl:activationStatus": {
+        "type": "bool",
+        "nulls": 361,
+        "null_pct": 16.2,
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          true,
+          false
+        ]
+      },
+      "mgnl:lastActivatedVersion": {
+        "type": "string",
+        "nulls": 2155,
+        "null_pct": 96.9,
+        "unique": 3,
+        "cardinality": 0.044,
+        "min_len": 3,
+        "max_len": 3,
+        "samples": [
+          "1.0",
+          "1.1",
+          "1.2"
+        ],
+        "issues": [
+          {
+            "type": "numeric_as_string",
+            "message": "Column contains numbers stored as strings",
+            "example": "1.0"
+          }
+        ]
+      },
+      "mgnl:lastActivatedBy": {
+        "type": "string",
+        "nulls": 2135,
+        "null_pct": 96.0,
+        "unique": 3,
+        "cardinality": 0.034,
+        "min_len": 5,
+        "max_len": 7,
+        "samples": [
+          "ajerrom",
+          "pnptc",
+          "achoe"
+        ]
+      },
+      "mgnl:lastActivatedVersionCreated": {
+        "type": "string",
+        "nulls": 2155,
+        "null_pct": 96.9,
+        "unique": 50,
+        "cardinality": 0.735,
+        "min_len": 24,
+        "max_len": 24,
+        "samples": [
+          "2024-07-17T10:07:10.086Z",
+          "2024-09-25T21:25:31.918Z",
+          "2025-01-06T18:44:19.921Z",
+          "2025-01-06T18:45:11.701Z",
+          "2025-01-06T18:45:47.757Z"
+        ]
+      },
+      "untitled": {
+        "type": "string",
+        "nulls": 2222,
+        "null_pct": 100.0,
+        "unique": 1,
+        "cardinality": 1.0,
+        "min_len": 0,
+        "max_len": 0,
+        "samples": [
+          ""
+        ]
+      },
+      "untitled0": {
+        "type": "string",
+        "nulls": 2222,
+        "null_pct": 100.0,
+        "unique": 1,
+        "cardinality": 1.0,
+        "min_len": 0,
+        "max_len": 0,
+        "samples": [
+          ""
+        ]
+      },
+      "startupLocation-search": {
+        "type": "fixed_size_binary[16]",
+        "nulls": 2222,
+        "null_pct": 100.0,
+        "unique": 1,
+        "cardinality": 1.0,
+        "samples": [
+          "b'_!/\\xb1$+LH\\x86u\\x1d\\xbaR\\x92\\xcb\\x04'"
+        ]
+      },
+      "name": {
+        "type": "string",
+        "nulls": 2221,
+        "null_pct": 99.9,
+        "unique": 1,
+        "cardinality": 0.5,
+        "min_len": 14,
+        "max_len": 14,
+        "samples": [
+          "oneimaging-com"
+        ],
+        "issues": [
+          {
+            "type": "single_value",
+            "message": "All 2 rows have same value",
+            "value": "oneimaging-com"
+          }
+        ]
+      }
+    }
+  },
+  "issues": [
+    "@nodeType: All 2223 rows have same value",
+    "jcr:createdBy: All 2223 rows have same value",
+    "startupLongitude: Column contains numbers stored as strings",
+    "startupLatitude: Column contains numbers stored as strings",
+    "startupPlaybookID: Mixed date granularities: ['yearly', 'monthly_compact']",
+    "startupPlaybookID: Column contains numbers stored as strings",
+    "startupDescription: 1 values have leading/trailing whitespace",
+    "startupOneLiner: 4 values look like nulls",
+    "startupOneLiner: 2 values have leading/trailing whitespace",
+    "mgnl:createdBy: All 2223 rows have same value",
+    "mgnl:comment: All 424 rows have same value",
+    "jcr:isCheckedOut: All 424 rows have same value",
+    "mgnl:lastActivatedVersion: Column contains numbers stored as strings",
+    "name: All 2 rows have same value"
+  ]
+}

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Report: accelerators</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #333; border-bottom: 2px solid #007acc; padding-bottom: 10px; }
+        .summary {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .summary-card {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .summary-card h3 { margin: 0 0 5px 0; color: #666; font-size: 14px; }
+        .summary-card .value { font-size: 24px; font-weight: bold; color: #007acc; }
+        .dataset {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .dataset-header {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+            border-bottom: 1px solid #eee;
+        }
+        .dataset-header:hover { background: #f0f0f0; }
+        .dataset-header h2 { margin: 0; font-size: 18px; }
+        .dataset-meta { color: #666; font-size: 14px; }
+        .dataset-content { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .dataset.open .dataset-content { max-height: 2000px; padding: 20px; }
+        .dataset-header .arrow { transition: transform 0.3s; }
+        .dataset.open .dataset-header .arrow { transform: rotate(90deg); }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #f9f9f9; font-weight: 600; position: sticky; top: 0; }
+        td.num { text-align: right; font-family: monospace; }
+        .top-values { max-width: 400px; }
+        .top-values span {
+            display: inline-block;
+            background: #e8f4fc;
+            padding: 2px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            font-size: 12px;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .expand-values {
+            color: #007acc;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .all-values { display: none; margin-top: 10px; padding: 10px; background: #f9f9f9; border-radius: 4px; }
+        .all-values.show { display: block; }
+        .error { color: #c00; }
+        .null-high { color: #c00; }
+    </style>
+</head>
+<body>
+    <h1>Dataset Report: accelerators</h1>
+    <p style="color: #666;">Generated: 2025-12-05 13:31</p>
+
+    <div class="summary">
+        <div class="summary-card">
+            <h3>Datasets</h3>
+            <div class="value">5</div>
+        </div>
+        <div class="summary-card">
+            <h3>Total Rows</h3>
+            <div class="value">29,292</div>
+        </div>
+        <div class="summary-card">
+            <h3>Total Size</h3>
+            <div class="value">17.9 MB</div>
+        </div>
+    </div>
+
+    <div class="dataset">
+        <div class="dataset-header" onclick="this.parentElement.classList.toggle('open')">
+            <div>
+                <h2>500_global_companies</h2>
+            </div>
+            <div class="dataset-meta">
+                2,222 rows &nbsp;|&nbsp; 1.7 MB &nbsp;|&nbsp; 15 columns
+                <span class="arrow">▶</span>
+            </div>
+        </div>
+        <div class="dataset-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Type</th>
+                        <th>Unique</th>
+                        <th>Nulls</th>
+                        <th>Top Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>id</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,222</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="8269">8269</span><span title="4026">4026</span><span title="3696">3696</span><span title="5289">5289</span><span title="3401">3401</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_id').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_id"><span>8269</span><span>4026</span><span>3696</span><span>5289</span><span>3401</span><span>3678</span><span>4049</span><span>2733</span><span>4819</span><span>4427</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>name</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,221</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Optimize Health">Optimize Health</span><span title="10k Science">10k Science</span><span title="15five">15five</span><span title="1huddle">1huddle</span><span title="21 Market">21 Market</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_name').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_name"><span>Optimize Health</span><span>10k Science</span><span>15five</span><span>1huddle</span><span>21 Market</span><span>3D Look</span><span>410 Labs</span><span>42</span><span>8sec</span><span>99.co</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>legal_name</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,222</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="DYNAMOID, INC.">DYNAMOID, INC.</span><span title="15Five, Inc.">15Five, Inc.</span><span title="1Huddle, Inc.">1Huddle, Inc.</span><span title="21st Century Market, Inc.">21st Century Market, Inc.</span><span title="3D Look Inc">3D Look Inc</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_legal_name').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_legal_name"><span>DYNAMOID, INC.</span><span>15Five, Inc.</span><span>1Huddle, Inc.</span><span>21st Century Market, Inc.</span><span>3D Look Inc</span><span>Distilabs, Inc.</span><span>42 Technologies, Inc.</span><span>8SEC SAS</span><span>99 Group Pte. Ltd.</span><span>99 Minutos, Inc.</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>description</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,114</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="Developer of student engagement and l...">Developer of student engagement and l...</span><span title="Operator of a performance management ...">Operator of a performance management ...</span><span title="Developer of a game-based workforce t...">Developer of a game-based workforce t...</span><span title="Developer of an e-commerce platform d...">Developer of an e-commerce platform d...</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_description').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_description"><span></span><span>Developer of student engagement and l...</span><span>Operator of a performance management ...</span><span>Developer of a game-based workforce t...</span><span>Developer of an e-commerce platform d...</span><span>Developer of an artificial intelligen...</span><span>Developer of message cleanup technolo...</span><span>Developer of a predictive analytics p...</span><span>Operator of a game studio intended to...</span><span>Operator of an online property listin...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>website</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,161</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="www.15five.com">www.15five.com</span><span title="1huddle.co">1huddle.co</span><span title="www.21market.kr">www.21market.kr</span><span title="3dlook.me">3dlook.me</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_website').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_website"><span></span><span>www.15five.com</span><span>1huddle.co</span><span>www.21market.kr</span><span>3dlook.me</span><span>410labs.com</span><span>www.42technologies.com</span><span>8sec.games</span><span>www.99.co</span><span>99minutos.com</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>linkedin_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">639</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="https://www.linkedin.com/company/1hud...">https://www.linkedin.com/company/1hud...</span><span title="https://linkedin.com/company/actualco...">https://linkedin.com/company/actualco...</span><span title="https://www.linkedin.com/company/adap...">https://www.linkedin.com/company/adap...</span><span title="https://www.linkedin.com/company/aeso...">https://www.linkedin.com/company/aeso...</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_linkedin_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_linkedin_url"><span></span><span>https://www.linkedin.com/company/1hud...</span><span>https://linkedin.com/company/actualco...</span><span>https://www.linkedin.com/company/adap...</span><span>https://www.linkedin.com/company/aeso...</span><span>https://www.linkedin.com/company/agil...</span><span>https://www.linkedin.com/company/agrapp</span><span>https://www.linkedin.com/company/ailu...</span><span>https://www.linkedin.com/company/aipa...</span><span>https://www.linkedin.com/company/airb...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>logo_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1,759</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="https://founder-hub-public.s3.us-west...">https://founder-hub-public.s3.us-west...</span><span title="https://founder-hub-public.s3.us-west...">https://founder-hub-public.s3.us-west...</span><span title="https://founder-hub-public.s3.us-west...">https://founder-hub-public.s3.us-west...</span><span title="https://founder-hub-public.s3.us-west...">https://founder-hub-public.s3.us-west...</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_logo_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_logo_url"><span></span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.amazona...</span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.us-west...</span><span>https://founder-hub-public.s3.amazona...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>country</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">88</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="United States">United States</span><span title="Singapore">Singapore</span><span title="Mexico">Mexico</span><span title="Saudi Arabia">Saudi Arabia</span><span title="UNITED STATES">UNITED STATES</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_country').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_country"><span>United States</span><span>Singapore</span><span>Mexico</span><span>Saudi Arabia</span><span>UNITED STATES</span><span>United Arab Emirates</span><span>South Korea</span><span>Canada</span><span>Malaysia</span><span>United Kingdom</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>region</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">14</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="North America">North America</span><span title="Middle East & Africa">Middle East & Africa</span><span title="South Asia">South Asia</span><span title="Latin America">Latin America</span><span title=""></span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_region').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_region"><span>North America</span><span>Middle East & Africa</span><span>South Asia</span><span>Latin America</span><span></span><span>Europe</span><span>North Asia</span><span>Southeast Asia</span><span>Canada</span><span>Brazil</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>stage</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">15</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Seed">Seed</span><span title="Exited">Exited</span><span title="Series A">Series A</span><span title="Pre-Seed">Pre-Seed</span><span title="Series B">Series B</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_stage').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_stage"><span>Seed</span><span>Exited</span><span>Series A</span><span>Pre-Seed</span><span>Series B</span><span>Series C</span><span>Series D & Beyond</span><span>Secondary Sale</span><span>NA</span><span>Active - unknown</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>business_model</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">6</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="B2B">B2B</span><span title="B2C">B2C</span><span title="B2A">B2A</span><span title=""></span><span title="D2C">D2C</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_business_model').classList.toggle('show'); this.textContent = this.textContent === '+1 more' ? 'hide' : '+1 more'">+1 more</span>
+                        <div class="all-values" id="500_global_companies_business_model"><span>B2B</span><span>B2C</span><span>B2A</span><span></span><span>D2C</span><span>Fund</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>industries</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">482</td>
+                        <td class="num ">5.0%</td>
+                        <td class="top-values"><span title="['Developer Tools']">['Developer Tools']</span><span title="['FinTech']">['FinTech']</span><span title="['Content']">['Content']</span><span title="['HR Tech']">['HR Tech']</span><span title="['Real Estate']">['Real Estate']</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_industries').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_industries"><span>['Developer Tools']</span><span>['FinTech']</span><span>['Content']</span><span>['HR Tech']</span><span>['Real Estate']</span><span>['Education']</span><span>['Healthcare']</span><span>['Fashion']</span><span>['Data & Analytics']</span><span>['Supply Chain']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>batches</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">84</td>
+                        <td class="num null-high">62.5%</td>
+                        <td class="top-values"><span title="['Distro 1']">['Distro 1']</span><span title="['GA 18']">['GA 18']</span><span title="['GA 16']">['GA 16']</span><span title="['GA 25']">['GA 25']</span><span title="['GA 17']">['GA 17']</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_batches').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_batches"><span>['Distro 1']</span><span>['GA 18']</span><span>['GA 16']</span><span>['GA 25']</span><span>['GA 17']</span><span>['GA 15']</span><span>['GA 20']</span><span>['GA 27']</span><span>['GA 19']</span><span>['GA 26']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>programs</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">18</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="['taiwan', 'global']">['taiwan', 'global']</span><span title="['global']">['global']</span><span title="['mena', 'global']">['mena', 'global']</span><span title="['sea', 'global']">['sea', 'global']</span><span title="['latam', 'global']">['latam', 'global']</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_programs').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_programs"><span>['taiwan', 'global']</span><span>['global']</span><span>['mena', 'global']</span><span>['sea', 'global']</span><span>['latam', 'global']</span><span>['korea', 'global']</span><span>['global', 'ee']</span><span>['thailand', 'global']</span><span>['thailand', 'sea', 'global']</span><span>['vietnam', 'global']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>first_investment_date</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1,533</td>
+                        <td class="num ">0.5%</td>
+                        <td class="top-values"><span title="1970-01-01T00:00:00.000Z">1970-01-01T00:00:00.000Z</span><span title="2011-10-01T00:00:00.000Z">2011-10-01T00:00:00.000Z</span><span title="2014-04-16T00:00:00.000Z">2014-04-16T00:00:00.000Z</span><span title="2016-08-30T00:00:00.000Z">2016-08-30T00:00:00.000Z</span><span title="2016-04-01T00:00:00.000Z">2016-04-01T00:00:00.000Z</span>
+                        <span class="expand-values" onclick="document.getElementById('500_global_companies_first_investment_date').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="500_global_companies_first_investment_date"><span>1970-01-01T00:00:00.000Z</span><span>2011-10-01T00:00:00.000Z</span><span>2014-04-16T00:00:00.000Z</span><span>2016-08-30T00:00:00.000Z</span><span>2016-04-01T00:00:00.000Z</span><span>2019-12-19T00:00:00.000Z</span><span>2016-10-05T00:00:00.000Z</span><span>2015-02-09T00:00:00.000Z</span><span>2013-02-25T00:00:00.000Z</span><span>2016-08-05T00:00:00.000Z</span></div>
+</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="dataset">
+        <div class="dataset-header" onclick="this.parentElement.classList.toggle('open')">
+            <div>
+                <h2>accelerator_companies</h2>
+            </div>
+            <div class="dataset-meta">
+                14,646 rows &nbsp;|&nbsp; 6.9 MB &nbsp;|&nbsp; 8 columns
+                <span class="arrow">▶</span>
+            </div>
+        </div>
+        <div class="dataset-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Type</th>
+                        <th>Unique</th>
+                        <th>Nulls</th>
+                        <th>Top Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>id</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">10,000</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="500_global_8269">500_global_8269</span><span title="500_global_4026">500_global_4026</span><span title="500_global_3696">500_global_3696</span><span title="500_global_5289">500_global_5289</span><span title="500_global_3401">500_global_3401</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_id').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_id"><span>500_global_8269</span><span>500_global_4026</span><span>500_global_3696</span><span>500_global_5289</span><span>500_global_3401</span><span>500_global_3678</span><span>500_global_4049</span><span>500_global_2733</span><span>500_global_4819</span><span>500_global_4427</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>source</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="techstars">techstars</span><span title="500_global">500_global</span><span title="plug_and_play">plug_and_play</span><span title="ycombinator">ycombinator</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>name</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">9,829</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Aumet">Aumet</span><span title="Clara">Clara</span><span title="Cobalt">Cobalt</span><span title="Origin">Origin</span><span title="Vela">Vela</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_name').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_name"><span>Aumet</span><span>Clara</span><span>Cobalt</span><span>Origin</span><span>Vela</span><span>Lovys</span><span>Albert</span><span>Algolia</span><span>Angelcam</span><span>Animoca Brands</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>description</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">9,856</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="Created by SigParser">Created by SigParser</span><span title="Developer of student engagement and l...">Developer of student engagement and l...</span><span title="Deliver personalization to your custo...">Deliver personalization to your custo...</span><span title="#1 telephony system for startups acro...">#1 telephony system for startups acro...</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_description').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_description"><span></span><span>Created by SigParser</span><span>Developer of student engagement and l...</span><span>Deliver personalization to your custo...</span><span>#1 telephony system for startups acro...</span><span>My Dealer Service provides software s...</span><span>Memby is a suite of research-driven s...</span><span>Vertru: where Google meets Bloomberg ...</span><span>Operator of a performance management ...</span><span>Developer of a game-based workforce t...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>website</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">8,999</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="appsamurai.com">appsamurai.com</span><span title="boomerangapp.com">boomerangapp.com</span><span title="clara.co">clara.co</span><span title="contently.com">contently.com</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_website').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_website"><span></span><span>appsamurai.com</span><span>boomerangapp.com</span><span>clara.co</span><span>contently.com</span><span>elmetr.com</span><span>fitcolatam.com</span><span>buglance.com</span><span>justicetext.com</span><span>orderlyhealth.com</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>logo_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">9,212</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="https://cdn.playbook.vc/media/startup...">https://cdn.playbook.vc/media/startup...</span><span title="/company/thumb/missing.png">/company/thumb/missing.png</span><span title="https://assets.techstars.com/default-...">https://assets.techstars.com/default-...</span><span title="http://apimg.techstars.com/sf/account...">http://apimg.techstars.com/sf/account...</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_logo_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_logo_url"><span></span><span>https://cdn.playbook.vc/media/startup...</span><span>/company/thumb/missing.png</span><span>https://assets.techstars.com/default-...</span><span>http://apimg.techstars.com/sf/account...</span><span>https://apimg.techstars.com/profiles/...</span><span>https://apimg.techstars.com/connect/i...</span><span>http://apimg.techstars.com/sf/account...</span><span>https://s3.amazonaws.com/companies-te...</span><span>https://apimg.techstars.com/connect/i...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>country</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">125</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="United States">United States</span><span title=""></span><span title="United Kingdom">United Kingdom</span><span title="Canada">Canada</span><span title="Germany">Germany</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_country').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_country"><span>United States</span><span></span><span>United Kingdom</span><span>Canada</span><span>Germany</span><span>Israel</span><span>Singapore</span><span>France</span><span>Mexico</span><span>India</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>country_iso</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">111</td>
+                        <td class="num ">5.9%</td>
+                        <td class="top-values"><span title="US">US</span><span title="GB">GB</span><span title="CA">CA</span><span title="DE">DE</span><span title="SG">SG</span>
+                        <span class="expand-values" onclick="document.getElementById('accelerator_companies_country_iso').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="accelerator_companies_country_iso"><span>US</span><span>GB</span><span>CA</span><span>DE</span><span>SG</span><span>IL</span><span>FR</span><span>MX</span><span>AE</span><span>IN</span></div>
+</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="dataset">
+        <div class="dataset-header" onclick="this.parentElement.classList.toggle('open')">
+            <div>
+                <h2>plug_and_play_companies</h2>
+            </div>
+            <div class="dataset-meta">
+                2,140 rows &nbsp;|&nbsp; 3.1 MB &nbsp;|&nbsp; 15 columns
+                <span class="arrow">▶</span>
+            </div>
+        </div>
+        <div class="dataset-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Type</th>
+                        <th>Unique</th>
+                        <th>Nulls</th>
+                        <th>Top Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>id</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,140</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="87770">87770</span><span title="81662">81662</span><span title="80568">80568</span><span title="71582">71582</span><span title="79330">79330</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_id').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_id"><span>87770</span><span>81662</span><span>80568</span><span>71582</span><span>79330</span><span>79732</span><span>84613</span><span>85447</span><span>84961</span><span>77784</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>name</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,122</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Breinify">Breinify</span><span title="Edge">Edge</span><span title="Sift">Sift</span><span title="Garage">Garage</span><span title="Lula">Lula</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_name').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_name"><span>Breinify</span><span>Edge</span><span>Sift</span><span>Garage</span><span>Lula</span><span>Properly</span><span>Vela</span><span>Radiant AI</span><span>Senseye</span><span>Lovys</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>description</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,132</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Created by SigParser">Created by SigParser</span><span title="Resultid is a pioneering company spec...">Resultid is a pioneering company spec...</span><span title=""Lampovet is a pioneering company in ...">"Lampovet is a pioneering company in ...</span><span title=""Digitus is an Insurtech company focu...">"Digitus is an Insurtech company focu...</span><span title=""Hyperplane AI is a pioneering compan...">"Hyperplane AI is a pioneering compan...</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_description').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_description"><span>Created by SigParser</span><span>Resultid is a pioneering company spec...</span><span>"Lampovet is a pioneering company in ...</span><span>"Digitus is an Insurtech company focu...</span><span>"Hyperplane AI is a pioneering compan...</span><span>Varme Energy is a pioneering sustaina...</span><span>"Holocyte is a pioneering material sc...</span><span>"DigiFarm is an innovative ag-tech co...</span><span>C-Zero is a sustainability-focused co...</span><span>NanoTerraTech Advanced Materials Inc....</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>one_liner</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,138</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Residential real estate marketplace">Residential real estate marketplace</span><span title="Barley & Britches is a progressive cl...">Barley & Britches is a progressive cl...</span><span title="Unlocking Business Growth Through Cus...">Unlocking Business Growth Through Cus...</span><span title="Personalised nutrition and care start...">Personalised nutrition and care start...</span><span title="Digitus is an embedded insurance plat...">Digitus is an embedded insurance plat...</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_one_liner').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_one_liner"><span>Residential real estate marketplace</span><span>Barley & Britches is a progressive cl...</span><span>Unlocking Business Growth Through Cus...</span><span>Personalised nutrition and care start...</span><span>Digitus is an embedded insurance plat...</span><span>Hyperplane builds the brain for finan...</span><span>Varme is developing the future of the...</span><span>Emerging materials and energy making ...</span><span>DigiFarm detects the world’s most acc...</span><span>Low Cost Ethylene from Industrial Off...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>website</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">2,140</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="https://www.resultid.ai">https://www.resultid.ai</span><span title="https://www.lampovet.com/">https://www.lampovet.com/</span><span title="https://digitus.ai">https://digitus.ai</span><span title="https://www.hyperplane.ai">https://www.hyperplane.ai</span><span title="https://www.varme.ca/">https://www.varme.ca/</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_website').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_website"><span>https://www.resultid.ai</span><span>https://www.lampovet.com/</span><span>https://digitus.ai</span><span>https://www.hyperplane.ai</span><span>https://www.varme.ca/</span><span>https://holocyte.com/</span><span>https://digifarm.io</span><span>https://c-zeroinc.com/</span><span>https://nanoterratech.com/</span><span>https://www.dataspan.ai</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>logo_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1,900</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="https://cdn.playbook.vc/media/startup...">https://cdn.playbook.vc/media/startup...</span><span title="https://cdn.playbook.vc/media/thumbna...">https://cdn.playbook.vc/media/thumbna...</span><span title="https://cdn.playbook.vc/media/thumbna...">https://cdn.playbook.vc/media/thumbna...</span><span title="https://cdn.playbook.vc/media/thumbna...">https://cdn.playbook.vc/media/thumbna...</span><span title="https://cdn.playbook.vc/media/thumbna...">https://cdn.playbook.vc/media/thumbna...</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_logo_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_logo_url"><span>https://cdn.playbook.vc/media/startup...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span><span>https://cdn.playbook.vc/media/thumbna...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>country</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">68</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="United States">United States</span><span title="Canada">Canada</span><span title="United Kingdom">United Kingdom</span><span title="Germany">Germany</span><span title="Italy">Italy</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_country').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_country"><span>United States</span><span>Canada</span><span>United Kingdom</span><span>Germany</span><span>Italy</span><span>France</span><span>Israel</span><span>Spain</span><span>Japan</span><span>Singapore</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>location</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">16</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="7dd2818e-384e-4805-a6bd-1a62bd3fedb6">7dd2818e-384e-4805-a6bd-1a62bd3fedb6</span><span title="a95503ab-7c30-4fd8-aec7-be1361fc6fe8">a95503ab-7c30-4fd8-aec7-be1361fc6fe8</span><span title="94b879ed-e781-4ac1-9df4-f2f1738382fa">94b879ed-e781-4ac1-9df4-f2f1738382fa</span><span title="b0cc2895-ef3c-4e5c-964b-1bc5903f8014">b0cc2895-ef3c-4e5c-964b-1bc5903f8014</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_location').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_location"><span></span><span>7dd2818e-384e-4805-a6bd-1a62bd3fedb6</span><span>a95503ab-7c30-4fd8-aec7-be1361fc6fe8</span><span>94b879ed-e781-4ac1-9df4-f2f1738382fa</span><span>b0cc2895-ef3c-4e5c-964b-1bc5903f8014</span><span>5ac25987-041b-421b-8f99-bc37d2a2a0e4</span><span>3600e990-fd2c-498d-9faf-ec871ab00b96</span><span>adc1da75-bf21-4212-b7b9-251e05786f83</span><span>58156822-5a91-4fcc-b353-97e048499475</span><span>3a34c038-e124-4a47-ae44-10d8197469e7</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>latitude</td>
+                        <td>PrimitiveType("double")</td>
+                        <td class="num">461</td>
+                        <td class="num ">34.1%</td>
+                        <td class="top-values"><span title="37.7749295">37.7749295</span><span title="40.7127753">40.7127753</span><span title="51.5072178">51.5072178</span><span title="37.36883">37.36883</span><span title="37.4418834">37.4418834</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_latitude').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_latitude"><span>37.7749295</span><span>40.7127753</span><span>51.5072178</span><span>37.36883</span><span>37.4418834</span><span>34.0549076</span><span>52.52000659999999</span><span>48.856614</span><span>43.653226</span><span>51.04473309999999</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>longitude</td>
+                        <td>PrimitiveType("double")</td>
+                        <td class="num">461</td>
+                        <td class="num ">34.1%</td>
+                        <td class="top-values"><span title="-122.4194155">-122.4194155</span><span title="-74.0059728">-74.0059728</span><span title="-0.1275862">-0.1275862</span><span title="-122.0363496">-122.0363496</span><span title="-122.1430195">-122.1430195</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_longitude').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_longitude"><span>-122.4194155</span><span>-74.0059728</span><span>-0.1275862</span><span>-122.0363496</span><span>-122.1430195</span><span>-118.242643</span><span>13.404954</span><span>2.3522219</span><span>-79.3831843</span><span>-114.0718831</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>main_industry</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">29</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Fintech">Fintech</span><span title="Health">Health</span><span title="Energy">Energy</span><span title="Brand & Retail">Brand & Retail</span><span title="Mobility & Physical AI">Mobility & Physical AI</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_main_industry').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_main_industry"><span>Fintech</span><span>Health</span><span>Energy</span><span>Brand & Retail</span><span>Mobility & Physical AI</span><span>Insurtech</span><span>Enterprise & AI</span><span>Supply Chain</span><span>Food & Beverage</span><span>Deeptech</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>industries</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">739</td>
+                        <td class="num ">1.1%</td>
+                        <td class="top-values"><span title="['Fintech']">['Fintech']</span><span title="['Health']">['Health']</span><span title="['Enterprise & AI']">['Enterprise & AI']</span><span title="['Brand & Retail']">['Brand & Retail']</span><span title="['Deeptech']">['Deeptech']</span>
+                        <span class="expand-values" onclick="document.getElementById('plug_and_play_companies_industries').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="plug_and_play_companies_industries"><span>['Fintech']</span><span>['Health']</span><span>['Enterprise & AI']</span><span>['Brand & Retail']</span><span>['Deeptech']</span><span>['Insurtech']</span><span>['Supply Chain']</span><span>['Food & Beverage']</span><span>['Sustainability']</span><span>['Energy']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>is_unicorn</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>has_exited</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>is_accelerated</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="True">True</span><span title="False">False</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="dataset">
+        <div class="dataset-header" onclick="this.parentElement.classList.toggle('open')">
+            <div>
+                <h2>techstars_companies</h2>
+            </div>
+            <div class="dataset-meta">
+                5,052 rows &nbsp;|&nbsp; 2.2 MB &nbsp;|&nbsp; 22 columns
+                <span class="arrow">▶</span>
+            </div>
+        </div>
+        <div class="dataset-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Type</th>
+                        <th>Unique</th>
+                        <th>Nulls</th>
+                        <th>Top Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>id</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,052</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="39684977-9c09-40cf-af17-c7b423629690">39684977-9c09-40cf-af17-c7b423629690</span><span title="f172945c-a69e-3ac8-9d01-fba21bb06e72">f172945c-a69e-3ac8-9d01-fba21bb06e72</span><span title="7bcc9805-9471-3b48-8a73-f057f7edb52d">7bcc9805-9471-3b48-8a73-f057f7edb52d</span><span title="603187cc-63d2-4ee6-b5bf-3d65c50dacaf">603187cc-63d2-4ee6-b5bf-3d65c50dacaf</span><span title="397e37ae-00b3-3d1c-8356-15c8b66f2e9f">397e37ae-00b3-3d1c-8356-15c8b66f2e9f</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_id').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_id"><span>39684977-9c09-40cf-af17-c7b423629690</span><span>f172945c-a69e-3ac8-9d01-fba21bb06e72</span><span>7bcc9805-9471-3b48-8a73-f057f7edb52d</span><span>603187cc-63d2-4ee6-b5bf-3d65c50dacaf</span><span>397e37ae-00b3-3d1c-8356-15c8b66f2e9f</span><span>921772a4-196c-4589-9694-0de2d43b79d0</span><span>f951790f-abb6-4f5e-8ca7-ec1afeeba656</span><span>de4a87f6-77e0-3915-99a0-d005ba8ddebe</span><span>38c71782-cb61-406a-a058-b17ebf113574</span><span>3bc00a28-d53e-3600-ae61-067bb29a22e2</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>name</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,046</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Maya Ai">Maya Ai</span><span title="PressOne Africa">PressOne Africa</span><span title="Modern">Modern</span><span title="Memby">Memby</span><span title="Balance">Balance</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_name').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_name"><span>Maya Ai</span><span>PressOne Africa</span><span>Modern</span><span>Memby</span><span>Balance</span><span>Bean</span><span>HapWare</span><span>Laibl</span><span>Klira AI</span><span>ORBES</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>description</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,037</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="Deliver personalization to your custo...">Deliver personalization to your custo...</span><span title="#1 telephony system for startups acro...">#1 telephony system for startups acro...</span><span title="My Dealer Service provides software s...">My Dealer Service provides software s...</span><span title="Memby is a suite of research-driven s...">Memby is a suite of research-driven s...</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_description').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_description"><span></span><span>Deliver personalization to your custo...</span><span>#1 telephony system for startups acro...</span><span>My Dealer Service provides software s...</span><span>Memby is a suite of research-driven s...</span><span>Vertru: where Google meets Bloomberg ...</span><span>HapWare develops AlEye, a wearable as...</span><span>Laibl is an AI sourcing platform that...</span><span>Compliance layer for AI agents in reg...</span><span>ORBES makes autonomous space robots, ...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>city</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1,194</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="New York City">New York City</span><span title="London">London</span><span title="San Francisco">San Francisco</span><span title="Boston">Boston</span><span title="Los Angeles">Los Angeles</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_city').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_city"><span>New York City</span><span>London</span><span>San Francisco</span><span>Boston</span><span>Los Angeles</span><span>Seattle</span><span>Chicago</span><span>Austin</span><span>Toronto</span><span>Brooklyn</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>state_province</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">151</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="California">California</span><span title="New York">New York</span><span title="Massachusetts">Massachusetts</span><span title="Texas">Texas</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_state_province').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_state_province"><span></span><span>California</span><span>New York</span><span>Massachusetts</span><span>Texas</span><span>Colorado</span><span>Washington</span><span>Ontario</span><span>Illinois</span><span>Delaware</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>country</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">84</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="United States">United States</span><span title="United Kingdom">United Kingdom</span><span title="Canada">Canada</span><span title="Israel">Israel</span><span title="Germany">Germany</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_country').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_country"><span>United States</span><span>United Kingdom</span><span>Canada</span><span>Israel</span><span>Germany</span><span>France</span><span>Australia</span><span>India</span><span>Nigeria</span><span>Italy</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>world_region</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">7</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Americas">Americas</span><span title="Europe">Europe</span><span title="Middle East">Middle East</span><span title="Asia">Asia</span><span title="Africa">Africa</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_world_region').classList.toggle('show'); this.textContent = this.textContent === '+2 more' ? 'hide' : '+2 more'">+2 more</span>
+                        <div class="all-values" id="techstars_companies_world_region"><span>Americas</span><span>Europe</span><span>Middle East</span><span>Asia</span><span>Africa</span><span>Oceania</span><span></span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>world_subregion</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">20</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="North America">North America</span><span title="Western Europe">Western Europe</span><span title="Middle East">Middle East</span><span title="Southern Europe">Southern Europe</span><span title="Northern Europe">Northern Europe</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_world_subregion').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_world_subregion"><span>North America</span><span>Western Europe</span><span>Middle East</span><span>Southern Europe</span><span>Northern Europe</span><span>Oceania</span><span>Southern Asia</span><span>South America</span><span>Western Africa</span><span>Southeastern Asia</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>first_session_year</td>
+                        <td>PrimitiveType("long")</td>
+                        <td class="num">19</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="2023">2023</span><span title="2024">2024</span><span title="2022">2022</span><span title="2021">2021</span><span title="2020">2020</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_first_session_year').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_first_session_year"><span>2023</span><span>2024</span><span>2022</span><span>2021</span><span>2020</span><span>2019</span><span>2018</span><span>2017</span><span>2025</span><span>2016</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>industry_verticals</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">1,535</td>
+                        <td class="num ">1.4%</td>
+                        <td class="top-values"><span title="['Mobile']">['Mobile']</span><span title="['Artificial intelligence and machine...">['Artificial intelligence and machine...</span><span title="['Fintech']">['Fintech']</span><span title="['Fintech', 'Mobile']">['Fintech', 'Mobile']</span><span title="['HRtech']">['HRtech']</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_industry_verticals').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_industry_verticals"><span>['Mobile']</span><span>['Artificial intelligence and machine...</span><span>['Fintech']</span><span>['Fintech', 'Mobile']</span><span>['HRtech']</span><span>['Technology, media and telecommunica...</span><span>['Healthtech']</span><span>['Edtech']</span><span>['Artificial intelligence and machine...</span><span>['Cryptocurrency/Blockchain', 'Fintech']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>program_names</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">121</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="['Techstars New York City Accelerator']">['Techstars New York City Accelerator']</span><span title="['Techstars Boston Accelerator']">['Techstars Boston Accelerator']</span><span title="['Techstars Boulder Accelerator']">['Techstars Boulder Accelerator']</span><span title="['Techstars London Accelerator']">['Techstars London Accelerator']</span><span title="['Techstars Seattle Accelerator']">['Techstars Seattle Accelerator']</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_program_names').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_program_names"><span>['Techstars New York City Accelerator']</span><span>['Techstars Boston Accelerator']</span><span>['Techstars Boulder Accelerator']</span><span>['Techstars London Accelerator']</span><span>['Techstars Seattle Accelerator']</span><span>['Techstars Austin Accelerator']</span><span>['Techstars Berlin Accelerator']</span><span>['Techstars Chicago Accelerator']</span><span>['Techstars Anywhere Accelerator']</span><span>['Techstars Space Accelerator']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>program_slugs</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">59</td>
+                        <td class="num ">27.1%</td>
+                        <td class="top-values"><span title="['nyc']">['nyc']</span><span title="['boston']">['boston']</span><span title="['boulder']">['boulder']</span><span title="['london']">['london']</span><span title="['seattle']">['seattle']</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_program_slugs').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_program_slugs"><span>['nyc']</span><span>['boston']</span><span>['boulder']</span><span>['london']</span><span>['seattle']</span><span>['austin']</span><span>['berlin']</span><span>['chicago']</span><span>['anywhere']</span><span>['space']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>is_unicorn</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>is_bcorp</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>has_exited</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>is_current_session</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>website</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4,146</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="mayaknows.com">mayaknows.com</span><span title="pressone.africa">pressone.africa</span><span title="modernis.com">modernis.com</span><span title="joinmemby.com">joinmemby.com</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_website').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_website"><span></span><span>mayaknows.com</span><span>pressone.africa</span><span>modernis.com</span><span>joinmemby.com</span><span>hapware.com</span><span>laibl.co</span><span>getklira.com</span><span>orbes.space</span><span>cytodyme.com</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>linkedin_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4,853</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="linkedin.com/company/mayaaiknows">linkedin.com/company/mayaaiknows</span><span title="linkedin.com/company/pressone-africa">linkedin.com/company/pressone-africa</span><span title="linkedin.com/company/modernwallet">linkedin.com/company/modernwallet</span><span title="linkedin.com/company/the-elite-sweets">linkedin.com/company/the-elite-sweets</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_linkedin_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_linkedin_url"><span></span><span>linkedin.com/company/mayaaiknows</span><span>linkedin.com/company/pressone-africa</span><span>linkedin.com/company/modernwallet</span><span>linkedin.com/company/the-elite-sweets</span><span>linkedin.com/company/hapware</span><span>linkedin.com/company/floracracy</span><span>linkedin.com/company/laibl</span><span>linkedin.com/company/klira-ai</span><span>linkedin.com/company/orbesspace</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>twitter_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">3,551</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="twitter.com/">twitter.com/</span><span title="twitter.com/https">twitter.com/https</span><span title="twitter.com/modernb2b">twitter.com/modernb2b</span><span title="twitter.com/joinCabinet">twitter.com/joinCabinet</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_twitter_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_twitter_url"><span></span><span>twitter.com/</span><span>twitter.com/https</span><span>twitter.com/modernb2b</span><span>twitter.com/joinCabinet</span><span>twitter.com/a</span><span>twitter.com/meetmayaai</span><span>twitter.com/Pressone_africa</span><span>twitter.com/floracracy</span><span>twitter.com/digitalocean</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>facebook_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">3,176</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="facebook.com/profile.php">facebook.com/profile.php</span><span title="facebook.com/modernb2b">facebook.com/modernb2b</span><span title="facebook.com/RobinhoodproAPP">facebook.com/RobinhoodproAPP</span><span title="facebook.com/wix">facebook.com/wix</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_facebook_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_facebook_url"><span></span><span>facebook.com/profile.php</span><span>facebook.com/modernb2b</span><span>facebook.com/RobinhoodproAPP</span><span>facebook.com/wix</span><span>facebook.com/dashlabs</span><span>facebook.com/HUSSLUP</span><span>facebook.com/edngarden</span><span>facebook.com/Edify.cx/</span><span>facebook.com/MeetMayaAI</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>crunchbase_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4,447</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="crunchbase.com/organization/https:">crunchbase.com/organization/https:</span><span title="crunchbase.com/organization/pressone-...">crunchbase.com/organization/pressone-...</span><span title="crunchbase.com/organization/my-dealer...">crunchbase.com/organization/my-dealer...</span><span title="crunchbase.com/organization/spektra">crunchbase.com/organization/spektra</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_crunchbase_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_crunchbase_url"><span></span><span>crunchbase.com/organization/https:</span><span>crunchbase.com/organization/pressone-...</span><span>crunchbase.com/organization/my-dealer...</span><span>crunchbase.com/organization/spektra</span><span>crunchbase.com/organization/husslup</span><span>crunchbase.com/organization/compsol#s...</span><span>crunchbase.com/organization/sprout-wi...</span><span>crunchbase.com/organization/hapware</span><span>crunchbase.com/organization/maya-AI</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>logo_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,035</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="https://assets.techstars.com/default-...">https://assets.techstars.com/default-...</span><span title="http://apimg.techstars.com/sf/account...">http://apimg.techstars.com/sf/account...</span><span title="https://apimg.techstars.com/profiles/...">https://apimg.techstars.com/profiles/...</span><span title="https://apimg.techstars.com/connect/i...">https://apimg.techstars.com/connect/i...</span>
+                        <span class="expand-values" onclick="document.getElementById('techstars_companies_logo_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="techstars_companies_logo_url"><span></span><span>https://assets.techstars.com/default-...</span><span>http://apimg.techstars.com/sf/account...</span><span>https://apimg.techstars.com/profiles/...</span><span>https://apimg.techstars.com/connect/i...</span><span>http://apimg.techstars.com/sf/account...</span><span>https://s3.amazonaws.com/companies-te...</span><span>https://apimg.techstars.com/connect/i...</span><span>http://apimg.techstars.com/sf/account...</span><span>http://apimg.techstars.com/sf/account...</span></div>
+</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="dataset">
+        <div class="dataset-header" onclick="this.parentElement.classList.toggle('open')">
+            <div>
+                <h2>yc_companies</h2>
+            </div>
+            <div class="dataset-meta">
+                5,232 rows &nbsp;|&nbsp; 4.0 MB &nbsp;|&nbsp; 22 columns
+                <span class="arrow">▶</span>
+            </div>
+        </div>
+        <div class="dataset-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Type</th>
+                        <th>Unique</th>
+                        <th>Nulls</th>
+                        <th>Top Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>id</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,232</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="30117">30117</span><span title="30111">30111</span><span title="30088">30088</span><span title="30051">30051</span><span title="30046">30046</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_id').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_id"><span>30117</span><span>30111</span><span>30088</span><span>30051</span><span>30046</span><span>30038</span><span>30034</span><span>30099</span><span>30561</span><span>30544</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>name</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,162</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Scout">Scout</span><span title="Weave">Weave</span><span title="Pulse">Pulse</span><span title="Apollo">Apollo</span><span title="Atlas">Atlas</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_name').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_name"><span>Scout</span><span>Weave</span><span>Pulse</span><span>Apollo</span><span>Atlas</span><span>Assembly</span><span>Mesh</span><span>Dialect</span><span>Streak</span><span>Lume</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>slug</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,231</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="relvy-ai">relvy-ai</span><span title="foundry">foundry</span><span title="permitportal">permitportal</span><span title="attimet">attimet</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_slug').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_slug"><span></span><span>relvy-ai</span><span>foundry</span><span>permitportal</span><span>attimet</span><span>cekura-ai</span><span>lightscreen-ai</span><span>healthspark</span><span>gander</span><span>sureform</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>batch</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">42</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Winter 2022">Winter 2022</span><span title="Summer 2021">Summer 2021</span><span title="Winter 2021">Winter 2021</span><span title="Winter 2023">Winter 2023</span><span title="Winter 2024">Winter 2024</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_batch').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_batch"><span>Winter 2022</span><span>Summer 2021</span><span>Winter 2021</span><span>Winter 2023</span><span>Winter 2024</span><span>Summer 2024</span><span>Summer 2022</span><span>Winter 2020</span><span>Summer 2023</span><span>Summer 2020</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>description</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,083</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="AWS for AI Agents">AWS for AI Agents</span><span title="AI powered debugging notebooks for in...">AI powered debugging notebooks for in...</span><span title="Infrastructure to ship real apps with...">Infrastructure to ship real apps with...</span><span title="AI Operating System for Pre-construction">AI Operating System for Pre-construction</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_description').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_description"><span></span><span>AWS for AI Agents</span><span>AI powered debugging notebooks for in...</span><span>Infrastructure to ship real apps with...</span><span>AI Operating System for Pre-construction</span><span>we predict stuff</span><span>Voice AI and Chat AI agents: Testing ...</span><span>Voice + video AI interviewer</span><span>Empowering Physical Therapists to Go ...</span><span>Automation System for Global Aviation</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>long_description</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4,884</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="
+
+">
+
+</span><span title="Relvy provides AI-powered debugging n...">Relvy provides AI-powered debugging n...</span><span title="We’re building browser-native infrast...">We’re building browser-native infrast...</span><span title="We are building workflows to help dev...">We are building workflows to help dev...</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_long_description').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_long_description"><span></span><span>
+
+</span><span>Relvy provides AI-powered debugging n...</span><span>We’re building browser-native infrast...</span><span>We are building workflows to help dev...</span><span>We’re building a research lab that pu...</span><span>Cekura helps Conversational AI compan...</span><span>Lightscreen’s voice + video AI interv...</span><span>HealthSpark empowers physical therapi...</span><span>Gander is building AI-powered technol...</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>website</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">5,198</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span><span title="http://">http://</span><span title="https://www.relvy.ai">https://www.relvy.ai</span><span title="https://www.foundryrl.com/">https://www.foundryrl.com/</span><span title="https://permitportalapp.com/">https://permitportalapp.com/</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_website').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_website"><span></span><span>http://</span><span>https://www.relvy.ai</span><span>https://www.foundryrl.com/</span><span>https://permitportalapp.com/</span><span>https://attimet.com/</span><span>https://www.cekura.ai/</span><span>https://lightscreen.ai</span><span>https://www.joinhealthspark.com</span><span>https://usegander.com</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>status</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="Active">Active</span><span title="Inactive">Inactive</span><span title="Acquired">Acquired</span><span title="Public">Public</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>tags</td>
+                        <td>ArrayType(PrimitiveType("string"), contains_null=True)</td>
+                        <td class="num">3,380</td>
+                        <td class="num ">10.0%</td>
+                        <td class="top-values"><span title="['Fintech']">['Fintech']</span><span title="['SaaS']">['SaaS']</span><span title="['SaaS', 'B2B']">['SaaS', 'B2B']</span><span title="['Marketplace']">['Marketplace']</span><span title="['Fintech', 'SaaS', 'B2B']">['Fintech', 'SaaS', 'B2B']</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_tags').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_tags"><span>['Fintech']</span><span>['SaaS']</span><span>['SaaS', 'B2B']</span><span>['Marketplace']</span><span>['Fintech', 'SaaS', 'B2B']</span><span>['Fintech', 'SaaS']</span><span>['Fintech', 'Payments']</span><span>['Analytics']</span><span>['Education']</span><span>['Developer Tools']</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>location</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">713</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="San Francisco, CA, USA">San Francisco, CA, USA</span><span title=""></span><span title="New York, NY, USA">New York, NY, USA</span><span title="San Francisco, CA, USA; Remote">San Francisco, CA, USA; Remote</span><span title="New York, NY, USA; Remote">New York, NY, USA; Remote</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_location').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_location"><span>San Francisco, CA, USA</span><span></span><span>New York, NY, USA</span><span>San Francisco, CA, USA; Remote</span><span>New York, NY, USA; Remote</span><span>London, England, United Kingdom</span><span>Bengaluru, KA, India</span><span>Remote</span><span>Los Angeles, CA, USA</span><span>Mountain View, CA, USA</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>country</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>team_size</td>
+                        <td>PrimitiveType("long")</td>
+                        <td class="num">198</td>
+                        <td class="num ">1.6%</td>
+                        <td class="top-values"><span title="2">2</span><span title="3">3</span><span title="5">5</span><span title="4">4</span><span title="6">6</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_team_size').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_team_size"><span>2</span><span>3</span><span>5</span><span>4</span><span>6</span><span>11</span><span>10</span><span>8</span><span>7</span><span>1</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>linkedin_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>twitter_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>facebook_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>crunchbase_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title=""></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>logo_url</td>
+                        <td>PrimitiveType("string")</td>
+                        <td class="num">4,604</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="/company/thumb/missing.png">/company/thumb/missing.png</span><span title="https://bookface-images.s3.amazonaws....">https://bookface-images.s3.amazonaws....</span><span title="https://bookface-images.s3.amazonaws....">https://bookface-images.s3.amazonaws....</span><span title="https://bookface-images.s3.amazonaws....">https://bookface-images.s3.amazonaws....</span><span title="https://bookface-images.s3.amazonaws....">https://bookface-images.s3.amazonaws....</span>
+                        <span class="expand-values" onclick="document.getElementById('yc_companies_logo_url').classList.toggle('show'); this.textContent = this.textContent === '+5 more' ? 'hide' : '+5 more'">+5 more</span>
+                        <div class="all-values" id="yc_companies_logo_url"><span>/company/thumb/missing.png</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span><span>https://bookface-images.s3.amazonaws....</span></div>
+</td>
+                    </tr>
+
+                    <tr>
+                        <td>is_hiring</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>is_nonprofit</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">2</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span><span title="True">True</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>highlight_black</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>highlight_latinx</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>highlight_women</td>
+                        <td>PrimitiveType("boolean")</td>
+                        <td class="num">1</td>
+                        <td class="num ">0.0%</td>
+                        <td class="top-values"><span title="False">False</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

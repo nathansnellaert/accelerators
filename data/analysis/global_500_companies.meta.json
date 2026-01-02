@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "asset_name": "global_500_companies",
+    "source_path": "/Users/nathansnellaert/Documents/data-integrations/integrations/accelerators/data/raw/global_500_companies.json",
+    "source_size_bytes": 3573205,
+    "detected_format": "json",
+    "structure": "array",
+    "root_key_path": null,
+    "record_count": 2222,
+    "is_compressed": false,
+    "last_processed": "2025-12-07T12:03:39.590689",
+    "error": null
+  },
+  "schema": {
+    "rows": 2222,
+    "columns": {
+      "id": {
+        "type": "int64",
+        "unique": 2222,
+        "cardinality": 1.0,
+        "min": 2694,
+        "max": 9087,
+        "samples": [
+          8269,
+          4026,
+          3696,
+          5289,
+          3401
+        ]
+      },
+      "oneLiner": {
+        "type": "string",
+        "nulls": 79,
+        "null_pct": 3.6,
+        "unique": 2114,
+        "cardinality": 0.986,
+        "min_len": 0,
+        "max_len": 817,
+        "samples": [
+          "",
+          "Developer of student engagement and learning software designed to assist in the management and assessment process. The company's software helps universities to improve retention rates by tracking and learning about their students' involvement patterns and behaviors and makes it easy to visualize and assess efforts through data, streamlines workflows for departments and student organizations, enabling universities to map and create learning outcomes to opportunities for student success.",
+          "Operator of a performance management platform intended to create effective managers, highly engaged employees and high-powered organizations. The company's platform offers a research-backed performance tracker focused on forwarding growth and performance for each individual, enabling clients to monitor their employee's performance via mobile applications effectively.",
+          "Developer of a game-based workforce training platform designed to onboard, upskill, and develop employees. The company's platform converts boring training material into competitive games that are proven to improve employee engagement and performance, enabling businesses to carry out sales and service training and education programs for their employees in a fun and interactive way.",
+          "Developer of an e-commerce platform designed to inspect electronic device quality and resell them to consumers. The company purchases a variety of used electronic devices and sells them as verified refurbished products at the new product level through upcycling, packaging, and warranty, enabling consumers with refurbished products and increasing customer satisfaction."
+        ],
+        "issues": [
+          {
+            "type": "whitespace",
+            "message": "19 values have leading/trailing whitespace",
+            "example": "'Automating workflows on any software you use, through human language. '"
+          }
+        ]
+      },
+      "industries": {
+        "type": "list<element: struct<name: string>>",
+        "unique": 483,
+        "cardinality": 0.217,
+        "samples": [
+          "[]",
+          "[{'name': 'HR Tech'}]",
+          "[{'name': 'CPG (Consumer packaged goods)'}, {'n...",
+          "[{'name': 'Consumer'}]",
+          "[{'name': 'Fashion'}]"
+        ]
+      },
+      "tenant": {
+        "type": "list<element: struct<slug: string>>",
+        "unique": 18,
+        "cardinality": 0.008,
+        "samples": [
+          "[{'slug': 'global'}]",
+          "[{'slug': 'taiwan'}, {'slug': 'global'}]",
+          "[{'slug': 'korea'}, {'slug': 'global'}]",
+          "[{'slug': 'global'}, {'slug': 'ee'}]",
+          "[{'slug': 'sea'}, {'slug': 'global'}]"
+        ]
+      },
+      "batches": {
+        "type": "list<element: struct<brandName: string>>",
+        "unique": 86,
+        "cardinality": 0.039,
+        "samples": [
+          "[{'brandName': 'GA 34'}]",
+          "[]",
+          "[{'brandName': 'GA 2'}]",
+          "[{'brandName': 'GA 21'}]",
+          "[{'brandName': 'GA 18'}]"
+        ]
+      },
+      "investments": {
+        "type": "list<element: struct<initialInvestDate: string>>",
+        "unique": 1651,
+        "cardinality": 0.743,
+        "samples": [
+          "[{'initialInvestDate': '2024-06-20T00:00:00.000...",
+          "[{'initialInvestDate': '2012-12-20T00:00:00.000...",
+          "[{'initialInvestDate': '2015-11-06T00:00:00.000...",
+          "[{'initialInvestDate': '2022-04-15T00:00:00.000...",
+          "[{'initialInvestDate': '2018-06-19T00:00:00.000..."
+        ]
+      },
+      "organization_alternativeName": {
+        "type": "string",
+        "nulls": 166,
+        "null_pct": 7.5,
+        "unique": 2050,
+        "cardinality": 0.997,
+        "min_len": 0,
+        "max_len": 93,
+        "samples": [
+          "",
+          "Octa",
+          "10k Science;Dynamoid",
+          "15Five",
+          "1Huddle;Sales Huddle"
+        ]
+      },
+      "organization_businessName": {
+        "type": "string",
+        "nulls": 528,
+        "null_pct": 23.8,
+        "unique": 1693,
+        "cardinality": 0.999,
+        "min_len": 2,
+        "max_len": 40,
+        "samples": [
+          "Optimize Health",
+          "10k Science",
+          "15five",
+          "1huddle",
+          "21 Market"
+        ],
+        "issues": [
+          {
+            "type": "whitespace",
+            "message": "4 values have leading/trailing whitespace",
+            "example": "'Alphaus Cloud '"
+          }
+        ]
+      },
+      "organization_companyLinkedIn": {
+        "type": "string",
+        "nulls": 1582,
+        "null_pct": 71.2,
+        "unique": 639,
+        "cardinality": 0.998,
+        "min_len": 0,
+        "max_len": 112,
+        "samples": [
+          "",
+          "https://www.linkedin.com/company/1huddle-inc/",
+          "https://linkedin.com/company/actualconversion",
+          "https://www.linkedin.com/company/adaptyapp",
+          "https://www.linkedin.com/company/aesoptechnology/"
+        ],
+        "issues": [
+          {
+            "type": "null_like_strings",
+            "message": "1 values look like nulls",
+            "examples": [
+              "n/a"
+            ]
+          }
+        ]
+      },
+      "organization_companyUrl": {
+        "type": "string",
+        "nulls": 62,
+        "null_pct": 2.8,
+        "unique": 2160,
+        "cardinality": 1.0,
+        "min_len": 6,
+        "max_len": 69,
+        "samples": [
+          "www.15five.com",
+          "1huddle.co",
+          "www.21market.kr",
+          "3dlook.me",
+          "410labs.com"
+        ]
+      },
+      "organization_id": {
+        "type": "int64",
+        "unique": 2222,
+        "cardinality": 1.0,
+        "min": 2,
+        "max": 8177,
+        "samples": [
+          7936,
+          1334,
+          1004,
+          2597,
+          709
+        ]
+      },
+      "organization_imageUrl": {
+        "type": "string",
+        "nulls": 458,
+        "null_pct": 20.6,
+        "unique": 1759,
+        "cardinality": 0.997,
+        "min_len": 0,
+        "max_len": 94,
+        "samples": [
+          "",
+          "https://founder-hub-public.s3.us-west-1.amazonaws.com/e745af4e-0e9f-443f-b91c-88fa8dbf9ab3.png",
+          "https://founder-hub-public.s3.us-west-1.amazonaws.com/81e239f3-2fe5-45b5-8ccf-f6cea556eaff.png",
+          "https://founder-hub-public.s3.us-west-1.amazonaws.com/f45db4ae-df28-4de9-903b-762d21a916dc.png",
+          "https://founder-hub-public.s3.us-west-1.amazonaws.com/e9b54807-b8af-4c74-93c0-c4060cbd4dfc.png"
+        ]
+      },
+      "organization_name": {
+        "type": "string",
+        "unique": 2222,
+        "cardinality": 1.0,
+        "min_len": 5,
+        "max_len": 86,
+        "samples": [
+          "DYNAMOID, INC.",
+          "15Five, Inc.",
+          "1Huddle, Inc.",
+          "21st Century Market, Inc.",
+          "3D Look Inc"
+        ]
+      },
+      "organization_positions": {
+        "type": "list<element: struct<person: struct<firstName: string, lastName: string>>>",
+        "unique": 2156,
+        "cardinality": 0.97,
+        "samples": [
+          "[]",
+          "[{'person': {'firstName': 'David', 'lastName': ...",
+          "[{'person': {'firstName': 'Brianna', 'lastName'...",
+          "[{'person': {'firstName': 'park', 'lastName': '...",
+          "[{'person': {'firstName': 'Alex', 'lastName': '..."
+        ]
+      },
+      "businessModel_name": {
+        "type": "string",
+        "nulls": 76,
+        "null_pct": 3.4,
+        "unique": 5,
+        "cardinality": 0.002,
+        "min_len": 3,
+        "max_len": 4,
+        "samples": [
+          "B2B",
+          "B2C",
+          "B2A",
+          "D2C",
+          "Fund"
+        ]
+      },
+      "stage_name": {
+        "type": "string",
+        "nulls": 1,
+        "null_pct": 0.05,
+        "unique": 14,
+        "cardinality": 0.006,
+        "min_len": 2,
+        "max_len": 17,
+        "samples": [
+          "Seed",
+          "Exited",
+          "Series A",
+          "Pre-Seed",
+          "Series B"
+        ],
+        "issues": [
+          {
+            "type": "null_like_strings",
+            "message": "10 values look like nulls",
+            "examples": [
+              "NA"
+            ]
+          }
+        ]
+      },
+      "stage_onlyAdmin": {
+        "type": "bool",
+        "nulls": 1,
+        "null_pct": 0.05,
+        "unique": 2,
+        "cardinality": 0.001,
+        "samples": [
+          false,
+          true
+        ]
+      },
+      "organization_countryOfOperation_name": {
+        "type": "string",
+        "nulls": 1,
+        "null_pct": 0.05,
+        "unique": 87,
+        "cardinality": 0.039,
+        "min_len": 4,
+        "max_len": 22,
+        "samples": [
+          "United States",
+          "Singapore",
+          "Mexico",
+          "Saudi Arabia",
+          "UNITED STATES"
+        ]
+      },
+      "organization_regionOfOperation_name": {
+        "type": "string",
+        "nulls": 130,
+        "null_pct": 5.9,
+        "unique": 13,
+        "cardinality": 0.006,
+        "min_len": 6,
+        "max_len": 24,
+        "samples": [
+          "North America",
+          "Middle East & Africa",
+          "South Asia",
+          "Latin America",
+          "Europe"
+        ]
+      }
+    }
+  },
+  "issues": [
+    "oneLiner: 19 values have leading/trailing whitespace",
+    "organization_businessName: 4 values have leading/trailing whitespace",
+    "organization_companyLinkedIn: 1 values look like nulls",
+    "stage_name: 10 values look like nulls"
+  ]
+}
