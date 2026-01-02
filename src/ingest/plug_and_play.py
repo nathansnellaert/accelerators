@@ -3,6 +3,9 @@ from subsets_utils import get, save_raw_json
 
 API_URL = "https://public.dxp.playbook.vc/.rest/delivery/startups/v1"
 PAGE_SIZE = 100
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+}
 
 
 def run():
@@ -10,7 +13,7 @@ def run():
     offset = 0
 
     while True:
-        response = get(API_URL, params={"limit": PAGE_SIZE, "offset": offset})
+        response = get(API_URL, params={"limit": PAGE_SIZE, "offset": offset}, headers=HEADERS)
         response.raise_for_status()
 
         if not response.content:
