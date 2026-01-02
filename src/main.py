@@ -18,7 +18,7 @@ from transforms.companies import main as transform_companies
 
 ACCELERATORS = [
     ("500_global", ingest_global_500, transform_global_500),
-    ("plug_and_play", ingest_plug_and_play, transform_plug_and_play),
+    # ("plug_and_play", ingest_plug_and_play, transform_plug_and_play),  # API blocks cloud IPs
     ("techstars", ingest_techstars, transform_techstars),
     ("ycombinator", ingest_ycombinator, transform_ycombinator),
 ]
