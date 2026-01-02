@@ -7,11 +7,9 @@ with a minimal common schema.
 
 import json
 import pyarrow as pa
-from deltalake import DeltaTable
 from pathlib import Path
 
-from subsets_utils import upload_data
-from subsets_utils.environment import get_data_dir
+from subsets_utils import upload_data, load_asset
 
 DATASET_ID = "accelerator_companies"
 
@@ -35,9 +33,7 @@ COUNTRY_ISO = json.loads((MAPPINGS_DIR / "country_iso.json").read_text())
 
 def load_source(source_id: str, table_name: str) -> list[dict]:
     """Load and normalize a source dataset."""
-    table_path = Path(get_data_dir()) / "subsets" / table_name
-    dt = DeltaTable(str(table_path))
-    df = dt.to_pyarrow_table()
+    df = load_asset(table_name)
 
     rows = []
     for i in range(len(df)):
