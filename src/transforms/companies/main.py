@@ -15,7 +15,7 @@ DATASET_ID = "accelerator_companies"
 
 SOURCES = [
     ("500_global", "500_global_companies"),
-    ("plug_and_play", "plug_and_play_companies"),
+    # ("plug_and_play", "plug_and_play_companies"),  # API blocks cloud IPs
     ("techstars", "techstars_companies"),
     ("ycombinator", "yc_companies"),
 ]
@@ -23,7 +23,7 @@ SOURCES = [
 METADATA = {
     "id": DATASET_ID,
     "title": "Accelerator Companies",
-    "description": "Companies from top startup accelerators (500 Global, Plug and Play, Techstars, Y Combinator)",
+    "description": "Companies from top startup accelerators (500 Global, Techstars, Y Combinator)",
 }
 
 # Load country mapping
